@@ -7,7 +7,7 @@ else
 endif
 
 build: clean
-	@g++ -g -std=c++20 -Wall main.cpp -o chessboard.exe
+	@g++ -g -std=c++20 -Wall main.cpp chessboard.cpp -o chessboard.exe
 
 clean:
 	@$(RM) chessboard.exe;
