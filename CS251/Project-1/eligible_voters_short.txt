@@ -1,0 +1,10 @@
+California,25278803
+Colorado,3978892
+Connecticut,2572337
+Illinois,8983758
+Iowa,2297129
+Minnesota,3972330
+Montana,803833
+Nebraska,1353558
+New Mexico,1459901
+Rhode Island,786111

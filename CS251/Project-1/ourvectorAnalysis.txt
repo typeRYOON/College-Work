@@ -1,0 +1,296 @@
+*********************************************************
+ourvector<9stateData> stats:
+ # of vectors created:   1
+ # of elements inserted: 50
+ # of elements accessed: 2373
+*********************************************************
+
+For this project, I used one vector to store the data that was needed to perform the plot and stats functions. For every state
+I created a struct element within the vector. To sum I used 1 vector created on line 320 to store each state's struct data.
+I stored the data for the districts numbers/votes by storing everything after the state name into a string like so:
+1,xx,2xx,..,53,xx,xx. I read the string when I needed to for a specific state.
+
+There were 50 elements inserted because there were 50 states in the districts.txt dataset. For each struct element I stored
+the state name, the data string that contains the district num and voting numbers, and I also stored the total district
+number and eligible voters count as well.
+
+For the number of elements accessed I had to sort the array based on the state name due to binary search (for search/plot/stats functions)
+needing a sorted array to correctly find the desired key. I used insertion sort which is on average a O(N^2) runtime sorting algorithm.
+There were 50 elements, and so I expected around 2500 element accesses due to its quadratic runtime (50^2 = 2500). There are also maybe
+another 10 times when I need to access the elements such as using binary search and returning the index of the state struct needed for
+the plot and stats functions to only have one access each. There is only one sort done during the loading function. Overall for amount
+of elements and insertion sort being used, 2373 element accesses is within my expectations for this specific dataset.
+
+A method to reduce the number of accesses would be to use a more efficient sorting algorithm like a O(NlogN) one.
+I used insertion sort for this project as a complex sorting algorithm was not the point of this project but definitely
+could be a point that could be improved upon if I wanted this program to run more efficiently.
+
+Input:
+load districts.txt eligible_voters.txt
+search California
+stats
+plot
+exit
+
+Output:
+Welcome to the Gerrymandering App!
+
+Data loaded? No
+State: N/A
+
+Enter command:load districts.txt eligible_voters.txt
+
+-----------------------------
+
+Reading: districts.txt
+...Maryland...8 districts total
+...North Carolina...13 districts total
+...Idaho...2 districts total
+...Hawaii...2 districts total
+...New Jersey...12 districts total
+...Arkansas...4 districts total
+...Alaska...1 districts total
+...Missouri...8 districts total
+...Ohio...16 districts total
+...Kansas...4 districts total
+...Oregon...5 districts total
+...Montana...1 districts total
+...Washington...10 districts total
+...Iowa...4 districts total
+...Mississippi...4 districts total
+...Florida...27 districts total
+...Kentucky...6 districts total
+...Maine...2 districts total
+...West Virginia...3 districts total
+...Wyoming...1 districts total
+...California...53 districts total
+...Wisconsin...8 districts total
+...Utah...4 districts total
+...Connecticut...5 districts total
+...Michigan...14 districts total
+...New York...27 districts total
+...Nevada...4 districts total
+...Illinois...18 districts total
+...New Hampshire...2 districts total
+...Nebraska...3 districts total
+...Delaware...1 districts total
+...Virginia...11 districts total
+...Massachusetts...9 districts total
+...Alabama...7 districts total
+...Indiana...9 districts total
+...Louisiana...6 districts total
+...Vermont...1 districts total
+...Arizona...9 districts total
+...North Dakota...1 districts total
+...South Carolina...7 districts total
+...Tennessee...9 districts total
+...Georgia...14 districts total
+...Rhode Island...2 districts total
+...South Dakota...1 districts total
+...New Mexico...3 districts total
+...Minnesota...8 districts total
+...Texas...36 districts total
+...Colorado...7 districts total
+...Oklahoma...5 districts total
+...Pennsylvania...18 districts total
+
+Reading: eligible_voters.txt
+...Alabama...3606103 eligible voters
+...Alaska...519501 eligible voters
+...Arizona...4738332 eligible voters
+...Arkansas...2148441 eligible voters
+...California...25278803 eligible voters
+...Colorado...3978892 eligible voters
+...Connecticut...2572337 eligible voters
+...Delaware...693659 eligible voters
+...Florida...14601373 eligible voters
+...Georgia...6958725 eligible voters
+...Hawaii...1029072 eligible voters
+...Idaho...1161211 eligible voters
+...Illinois...8983758 eligible voters
+...Indiana...4860929 eligible voters
+...Iowa...2297129 eligible voters
+...Kansas...2065761 eligible voters
+...Kentucky...3276707 eligible voters
+...Louisiana...3391431 eligible voters
+...Maine...1058306 eligible voters
+...Maryland...4202282 eligible voters
+...Massachusetts...4978165 eligible voters
+...Michigan...7431589 eligible voters
+...Minnesota...3972330 eligible voters
+...Mississippi...2177349 eligible voters
+...Missouri...4519978 eligible voters
+...Montana...803833 eligible voters
+...Nebraska...1353558 eligible voters
+...Nevada...1970426 eligible voters
+...New Hampshire...1041147 eligible voters
+...New Jersey...6093144 eligible voters
+...New Mexico...1459901 eligible voters
+...New York...13693128 eligible voters
+...North Carolina...7317507 eligible voters
+...North Dakota...582534 eligible voters
+...Ohio...8753269 eligible voters
+...Oklahoma...2792423 eligible voters
+...Oregon...3006638 eligible voters
+...Pennsylvania...9737690 eligible voters
+...Rhode Island...786111 eligible voters
+...South Carolina...3702997 eligible voters
+...South Dakota...632098 eligible voters
+...Tennessee...4900137 eligible voters
+...Texas...17514961 eligible voters
+...Utah...1993581 eligible voters
+...Vermont...496439 eligible voters
+...Virginia...6061032 eligible voters
+...Washington...5123524 eligible voters
+...West Virginia...1430308 eligible voters
+...Wisconsin...4295057 eligible voters
+...Wyoming...431011 eligible voters
+
+Data loaded? Yes
+State: N/A
+
+Enter command:search california
+
+-----------------------------
+
+Data loaded? Yes
+State: California
+
+Enter command:stats
+
+-----------------------------
+
+Gerrymandered: No
+Wasted Democratic votes: 1575157
+Wasted  Republican votes: 1933999
+Eligible voters: 25278803
+
+Data loaded? Yes
+State: California
+
+Enter command:plot
+
+-----------------------------
+
+District: 1
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 2
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 3
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 4
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 5
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 6
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 7
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 8
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 9
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 10
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 11
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 12
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRR
+District: 13
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRR
+District: 14
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRR
+District: 15
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 16
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 17
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 18
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 19
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 20
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 21
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 22
+DDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 23
+DDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 24
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 25
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 26
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 27
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 28
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 29
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 30
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 31
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 32
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 33
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 34
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 35
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 36
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 37
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRR
+District: 38
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 39
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 40
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 41
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 42
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 43
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 44
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+District: 45
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 46
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 47
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 48
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 49
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 50
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 51
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 52
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+District: 53
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+
+Data loaded? Yes
+State: California
+
+Enter command:exit
+
+*********************************************************
+ourvector<9stateData> stats:
+ # of vectors created:   1
+ # of elements inserted: 50
+ # of elements accessed: 2373
+*********************************************************
+-----------------------------
+
+
+Process finished with exit code 0
