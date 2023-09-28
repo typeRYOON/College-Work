@@ -1,0 +1,67 @@
+Command: clear
+  Resets the music library to an empty state.
+
+Command: exit
+  Exits the program.
+
+Command: export [filename]
+  Exports the music library to the provided file.
+  If no filename is present, musicdatabase.txt is used.
+
+Command: help
+  Displays this help output.
+
+Command: load [filename]
+  Appends the file contents into the music library.
+  This command either adds to an empty or existing library.
+  If no filename is present, musicdatabase.txt is used.
+
+Command: search album|artist|song term [,additional terms]
+  Search for a set of albums in the library. The query 
+  will begin with album, artist, or song to note what
+  should be searched. This will be followed by a separated
+  list of search terms. The additional search terms are
+  optional and may start with a + or a - to modidfy the 
+  searching. Search is not case sensitive.
+
+  Default Behavior: Union of Results
+  When no modifier is present, the resultant set of albums
+  is the union of the resultant sets for the search terms.
+  This will create a set of albums where any of the search
+  terms are present.
+
+  + Modifier Present: Intersection of Results
+  The + modifier indicates a set intersection between the
+  current result and the result from using the search term
+  with the modifier. Creating a result where all albums
+  must contain the modified search term.
+
+  - Modifier Present: Difference of Results
+  The - modifier indicates a set difference between the
+  current result and the result from using the search term
+  with the modifier. Creating a result where all albums do
+  not contain the modified search term.
+
+  Example Uses
+  search album Abbey
+    --- creates a resultant album name set that includes all
+        albums that contain 'Abbey' in the album name.
+  search album Abbey Road
+    --- creates a resultant album name set that includes all
+        albums that contain 'Abbey' or 'Road' in the album
+        name.
+  search song Hello +Sunshine
+    --- creates a resultant album name set that includes all
+        albums that contain 'Hello' and 'Sunshine' in a song
+        name.
+  search artist Taylor -Swift
+    --- creates a resultant album name set that includes all
+        albums that contain 'Taylor' in any of the artists'
+        names but excludes all albums that contain 
+        'Swift' in any of the artists' names.
+
+Command: stats [-d]
+  Displays the totals for the loaded music library. The
+  total albums, number of unique artists, and number of 
+  songs (song duplicates may exist). Adding the -d option
+  will dump the entire music library to the console.
