@@ -1,0 +1,44 @@
+#light
+
+
+
+namespace FSharp
+
+namespace ImageLibrary
+    
+    module Operations =
+        
+        val greyification: r: int * g: int * b: int -> int * int * int
+        
+        val Grayscale:
+          width: int ->
+            height: int ->
+            depth: int ->
+            image: (int * int * int) list list -> (int * int * int) list list
+        
+        val Threshold:
+          width: int ->
+            height: int ->
+            depth: int ->
+            image: (int * int * int) list list ->
+            threshold: int -> (int * int * int) list list
+        
+        val FlipHorizontal:
+          width: int ->
+            height: int ->
+            depth: int ->
+            image: (int * int * int) list list -> (int * int * int) list list
+        
+        val EdgeDetect:
+          width: int ->
+            height: int ->
+            depth: int ->
+            image: (int * int * int) list list ->
+            threshold: int -> (int * int * int) list list
+        
+        val RotateRight90:
+          width: int ->
+            height: int ->
+            depth: int ->
+            image: (int * int * int) list list -> (int * int * int) list list
+

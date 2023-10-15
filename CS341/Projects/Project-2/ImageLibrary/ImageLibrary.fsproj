@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <OtherFlags>--sig:..\signatures.txt</OtherFlags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Library.fs" />
+  </ItemGroup>
+
+</Project>
