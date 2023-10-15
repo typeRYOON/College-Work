@@ -103,6 +103,7 @@ module hw03 =
         @param LT   : A list of type of tuples of form (int, [int,...]).
         @return List: A list of tuples of the form (int, float)                         *)
     let rec examAverages LT =
+
         match LT with
             | [] -> []
             | (id, scores)::tail ->
