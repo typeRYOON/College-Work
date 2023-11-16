@@ -1,0 +1,14 @@
+.root {
+    -fx-background-image: url("snif.jpg");
+    -fx-background-repeat: repeat;
+}
+
+.text-field {
+    -fx-pref-width: 200;
+    -fx-pref-height: 100;
+}
+
+.button {
+    -fx-pref-width: 200;
+    -fx-pref-height: 100;
+}

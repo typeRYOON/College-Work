@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXTemplate">
+    <left>
+        <VBox spacing="5">
+            <Button fx:id="button1" text="button 1" prefWidth="200" prefHeight="100" onAction="#button1Action"/>
+            <Button fx:id="button2" text="button 2" prefWidth="200" prefHeight="100" onAction="#button2Action"/>
+        </VBox>
+    </left>
+    <center>
+        <TextField fx:id="centerText" text="enter text here then press button 1"/>
+    </center>
+    <right>
+        <TextField fx:id="rightText" text="final string goes here" prefWidth="200" prefHeight="100" editable="false"/>
+    </right>
+    <stylesheets>
+        <URL value="@JavaFXTemplate.css" />
+    </stylesheets>
+</BorderPane>
