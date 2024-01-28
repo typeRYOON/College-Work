@@ -1,0 +1,310 @@
+\documentclass[11pt]{article}
+\usepackage{minted}
+\usepackage{amsfonts, amssymb, amsmath, float}
+\usepackage{enumerate, esint, nicefrac, algorithm2e}
+\usepackage{enumitem}
+\parindent 0px
+\title{CS151 :: Homework 1}
+\date{February 2, 2022}
+\author{Ryan Magdaleno}
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 1.} Write each of the following conditional statements and the 
+corresponding converse, inverse, and contrapositive as English sentences in the form
+"if $p$, then $q$."
+
+\vspace{5px}\textbf{Solution ::} 
+\begin{enumerate}[label=1.\arabic* ::]
+\item 
+When it stays warm for a week, the cherry trees bloom.
+
+Original: \textbf{if} it stays warm for a week, \textbf{then} the cherry trees bloom.\\
+Converse: \textbf{if} the cherry trees bloom, \textbf{then} the cherry trees will not
+bloom.\\
+Inverse: \textbf{if} it does not stay warm for a week, \textbf{then} the cherry trees
+will not bloom. \\
+Contrapositive: \textbf{if} the cherry trees do not bloom, \textbf{then} it does not stay
+warm for a week. \\
+\line(1,0){331px}
+
+\item 
+Being at least 18 years of age is necessary to get a driver's license.
+
+Original: \textbf{if} you are getting a driver's license, \textbf{then} you are atleast
+18 years old. \\
+Converse: \textbf{if} you are atleast 18 years old \textbf{then} you are getting a 
+driver's license.\\
+Inverse: \textbf{if} you are not getting a driver's license, \textbf{then} you are not 
+atleast 18 years old.\\
+Contrapositive: \textbf{if} you are not atleast 18 years old, \textbf{then} you are not
+getting a driver's license.\pagebreak
+
+\item
+To be eligible for the honors program, it is sufficient to maintain a 3.4 GPA.
+
+Original: \textbf{if} you maintain a 3.4 GPA, \textbf{then} you are eligible for
+the honors program.\\
+Converse: \textbf{if} you are eligible for the honors program, \textbf{then} you
+maintain a 3.4 GPA.\\
+Inverse: \textbf{if} you did not maintain a 3.4 GPA, \textbf{then} you are not eligible
+for the honors program.\\
+Contrapositive: \textbf{if} you are not eligible for the honors program, \textbf{then}
+you not maintain a 3.4 GPA.
+
+\end{enumerate}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 2.} Determine the truth value of each of the following statements if 
+the domain consists of all integers. If it is true, find a different domain for which 
+it is false. If it is false, find a different domain for which it is true. Justify 
+your answer.
+
+\vspace{5px}\textbf{Solution ::}
+\begin{enumerate}[label=2.\arabic* ::]
+\item 
+$\exists x(x^3=-1)$
+
+True. if $x=-1$, then $x^3=-1$. \\
+False when $x\ne -1$, then $x^3\ne-1$.
+
+\item
+$\exists x(x^2=3)$
+
+False, no whole integer squared equals 3. \\
+True when the domain consists of all real numbers, then if $x=\sqrt{3}$
+then $x^2=3$.
+
+\item
+$\forall x(x+1\le 2x)$
+
+False, if $x=0$, then $0+1\le 2(0)$ is a counterexample. \\
+True when $x$ must be $\ge 1, \forall x((x+1\le 2x) \cup (x\ge 1))$.
+
+\item
+$\forall x(x^2\ge 0)$
+
+True, negative integers squared are always greater than 0, positive integers squared
+must always be great than 0, at $x=0$ it equals 0, so the statement is true. \\
+False when the domain includes imaginary numbers, if $x=i$, then $i^2=-1,-1\ge 0$ is
+false so this makes the statement false.
+\end{enumerate}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 3.} Express each of the following sentences in terms of
+
+$S(x), P(x), Q(x,y)$, quantifiers, and logical operators.
+
+\vspace{5px}\textbf{Solution ::}
+\begin{enumerate}[label=3.\arabic* ::]
+\item 
+Every professor has been asked a question by some student.
+
+$\exists x(S(x)\cap\forall y(P(y)\rightarrow Q(x,y)))$
+
+\item
+There is a professor who has never been asked a question by any student.
+
+$\forall x(S(x)\cap\exists y(P(y)\rightarrow \neg Q(x,y)))$
+
+\item
+There is a student who has asked a question to exactly one professor.
+
+$\exists x\exists y((S(x)\cap \exists y(P(y)\rightarrow Q(x, y))\cap 
+(\forall z((z\ne y)\rightarrow \neg Q(x,z)))))$
+
+\item 
+There are two different students who have asked each other a question.
+
+$\exists x\exists y((S(x)\cap S(y))\cap(x\ne y)\cap(Q(x,y)\rightarrow Q(y,x)))$
+\end{enumerate}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 4.} Use the laws of propositional logic to prove that the following
+ compound propositions are logically equivalent.
+
+\vspace{5px}\textbf{Solution ::}
+\begin{enumerate}[label=4.\arabic* ::]
+\item 
+$(p\cap\neg q)\cup\neg (p\cup q)$ \textbf{and} $\neg q$
+\begin{align}
+    &(p\cap\neg q)\cup\neg (p\cup q) \\
+    &(p\cap\neg q)\cup\neg p\cap\neg q \\
+    &(\neg q\cup p)\cap (\neg q\cup\neg q)\cap\neg p \\
+    &(\neg q\cup p)\cap (\neg q)\cap\neg p \\
+    &(\neg q\cap p)\cup (\neg q\cap\neg q)\cap\neg p \\
+    &(\neg q\cap p)\cup\neg q\cap\neg p \\
+    &(\neg q\cap p)\cup\neg p\cap\neg q \\
+    &(\neg p\cup\neg q)\cap (\neg p\cup\neg q)\cap\neg q \\
+    &(\neg p\cup\neg q)\cap\neg q \\
+    &\neg q
+\end{align}
+\textbf{Usage of Classical Propositional Logic Rules ::}
+
+(9) \hspace{5px}used Absorption. \\
+(10) used Absorption.
+
+\line(1,0){331px}
+\item
+$\neg p\rightarrow\neg (q\cup r)$ \textbf{and} $(q\rightarrow p)\cap(r\rightarrow p)$
+\begin{align}
+    &\neg p\rightarrow\neg (q\cup r) \\
+    &p\cup\neg q\cap\neg r \\
+    &(p\cup\neg q)\cap (p\cup\neg r) \\
+    &(\neg q\cup p)\cap (\neg r\cup p) \\
+    &(q\rightarrow p)\cap (r\rightarrow p)
+\end{align}
+
+\textbf{Usage of Classical Propositional Logic Rules ::}
+
+(12) used Double Negation and De Morgan's Theorem \\
+(13) used Distribution.
+\pagebreak
+
+\item
+$\neg (p\cup (\neg q\cap (r\rightarrow p)))$ \textbf{and} $\neg p\cap 
+(\neg r\rightarrow q)$
+\begin{align}
+    &\neg (p\cup (\neg q\cap (r\rightarrow p))) \\
+    &\neg (p\cup (\neg q\cap (\neg r\cup p))) \\
+    &\neg (p\cup (\neg q \cup\neg r)\cap (\neg q\cup p)) \\
+    &\neg((p\cap\neg q)\cup(p\cap\neg r)\cap(\neg q\cup p)) \\
+    &\neg(p\cap\neg q)\cap\neg(p\cap\neg r)\cup\neg(\neg q\cup p) \\
+    &\neg p\cup q\cap\neg p\cup r\cap q \cap\neg p \\
+    &\neg p\cup q\cup r\cap q \\
+    &\neg p\cap r\cup q \\
+    &\neg p\cap(\neg r\rightarrow q)
+\end{align}
+\line(1,0){331px}
+
+\item
+$p\leftrightarrow q$ \textbf{and} $(p\cap q)\cup(\neg p\cap\neg q)$
+\begin{align}
+    &p\leftrightarrow q \\
+    &(p\rightarrow q)\cap(q\rightarrow p) \\
+    &(\neg p\rightarrow\neg q)\cap(\neg q\rightarrow\neg p) \\
+    &(p\cup\neg q)\cap(q\cup\neg p) \\
+    &(p\cap q)\cup(p\cap\neg p)\cup(\neg q\cap q)\cup(\neg q\cap\neg p) \\
+    &(p\cap q)\cup (F)\cup (F)\cup(\neg p\cap\neg q) \\
+    &(p\cap q)\cup(\neg p\cap\neg q) \\
+\end{align}
+
+\textbf{Usage of Classical Propositional Logic Rules ::}
+
+(27) used Contrapositive Rule\\
+(29) Expanded $(ac+ad+bc+bd)$.
+\pagebreak
+
+
+\end{enumerate}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 5.} Use the laws of propositional logic to prove that the following
+compound propositions are tautologies.
+
+\vspace{5px}\textbf{Solution ::}
+\begin{enumerate}[label=5.\arabic* ::]
+\item 
+$(p\cap q)\rightarrow(q\cup r)$
+\begin{align}
+    &(p\cap q)\rightarrow(q\cup r) \\
+    &\neg(p\cap q)\cup(q\cup r) \\
+    &\neg p\cup q\cup(q\cup r) \\
+    &\neg p\cup r\cup(q\cup q) \\
+    &\neg p\cup r\cup (T) \\
+    &\neg p\cup(r\cup T = T) \\
+    &\neg p\cup T \\
+    &T
+\end{align}
+\line(1,0){331px}
+
+\item
+$((\neg p\rightarrow q)\cap(p\rightarrow r)\cap (q\rightarrow r))\rightarrow r$
+\begin{align}
+    &((\neg p\rightarrow q)\cap(p\rightarrow r)\cap (q\rightarrow r))\rightarrow r \\
+    &\neg((p\cup q)\cap(\neg p\cup r)\cap(\neg q\cup r))\cup r \\
+    &\neg(p\cup q)\cup\neg(\neg p\cup r)\cup\neg(\neg q\cup r)\cup r \\
+    &\neg p\cap\neg q\cup p\cap\neg r\cup q\cap\neg r\cup r \\
+    &\neg p\cap\neg q\cup p\cap\neg r\cup r\cap q\cup r \\
+    &\neg p\cap p\cup\neg q\cap(T)\cap q\cup r \\
+    &(F)\cup\neg q\cap(T)\cap q\cup r \\
+    &(F)\cup\neg q\cap q\cap(T)\cup r \\
+    &(F)\cup(F)\cap r\cup(T) \\
+    &(F)\cup(T) \\
+    &T
+\end{align}
+\end{enumerate}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 6.} Determine whether each of the following compound propositions is
+satisfiable or unsatisfiable. Justify your answer.
+
+\vspace{5px}\textbf{Solution ::}
+\begin{enumerate}[label=6.\arabic* ::]
+\item 
+$(p\cup\neg q)\cap(\neg\cup q)\cap(\neg p\cup\neg q)$ \\
+Satifiable when $p = q = F$.
+\begin{align}
+    (p\cap\neg q) = (F\cup\neg F) &= T \\
+    (\neg p\cup q)=(\neg F\cup F) &= T \\
+    (\neg p\cup\neg q)=(\neg F\cup\neg F) &= T\\
+    T\cap T\cap T &= T \text{ Satifiable.}
+\end{align}\line(1,0){331px}
+
+\item
+$(p\cup\neg q)\cap(\neg p\cup q)\cap(q\cup r)\cap(q\cup\neg r)\cap(\neg q\cup\neg r)$ \\
+Satifiable when $p = q = T$, $r=F$.
+\begin{align}
+    (p\cup\neg q) = (T\cup\neg T) &= T \\
+    (\neg p\cup q) = (\neg T\cup T) &= T \\
+    (q\cup r) = (T\cup F) &= T \\
+    (q\cup\neg r) = (T\cup\neg F) &= T \\
+    (\neg q\cup\neg r) = (\neg T\cup\neg F) &= T \\
+    T\cap T\cap T\cap T\cap T &= T \text{ Satifiable.}
+\end{align}
+
+\pagebreak
+\item
+$(p\rightarrow q)\cap(p\rightarrow\neg q)\cap(\neg p\rightarrow q)\cap
+(\neg p\rightarrow\neg q)$ \\
+Not satisfiable, will use $p = F$, $q = T$.
+\begin{align}
+    (p\rightarrow q) = (F\rightarrow T) &= T \\
+    (p\rightarrow\neg q) = (F\rightarrow\neg T) &= T \\
+    (\neg p\rightarrow q) = (\neg F\rightarrow T) &= T \\
+    (\neg p\rightarrow\neg q) = (\neg T\rightarrow\neg F) &= F \text{ Not Satifiable.}
+\end{align}
+\textbf{Justification ::} \\
+There's always one statement that will result in false due to $p$ and $q$ both being used
+and negated in the statement, and so one sub \\statement will end up false no matter what
+truth value of $p$ and $q$.
+\line(1,0){331px}
+
+\item
+$(\neg p\leftrightarrow\neg q)\cap(\neg p\leftrightarrow q)$ \\
+Not satisfiable, will use $p = q = T$.
+\begin{align}
+    (\neg p\leftrightarrow\neg q) = (\neg T\leftrightarrow\neg T) &= T \\
+    (\neg p\leftrightarrow q) = (\neg T\leftrightarrow T) &= F \text{ Not Satifiable.}
+\end{align}
+\textbf{Justification ::} \\
+The first statement will need both variables to be the same to become true for the
+biconditional, in the next however that goes against the previous statement because now
+one of the statements $q$ is not \\negated causing for this statement to need one truth
+value to be $T$ while the other statement to be $F$ causing the whole statement to be not
+satisfiable.
+\end{enumerate}
+\end{document}
