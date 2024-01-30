@@ -1,0 +1,102 @@
+\documentclass[11pt]{article}
+\usepackage{minted}
+\usepackage{amsfonts, amssymb, amsmath, float}
+\usepackage{enumerate, esint, nicefrac, algorithm2e}
+\parindent 0px
+\date{November 30, 2023}
+\title{CS301 :: Homework 6}
+\author{Ryan Magdaleno}
+
+% Helpful ::
+% \line(1,0){358px}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 1. A FINITE Language}
+
+Let $FINITE_{TM} = \{\langle M\rangle \,|\, M$ is a TM and $M$ accepts 
+a finite language$\}$. \\
+Prove that $FINITE_{TM}$ is undecidable.
+
+\vspace{5px}\textbf{Solution ::}
+
+Suppose $FINITE_{TM}$ is deciable. \\
+Therefore there is a TM $C$ that decides it.
+
+\vspace{5px}$A = $ "On input $\langle M, w\rangle$,
+
+\hspace{30px}construct $M'=$ "on input $x$,
+
+\hspace{45px}Simulate $M$ on input $w$.
+
+\hspace{45px}If $M$ halts, reject, else accept."
+
+\hspace{30px}Pass $M'$ to $C$.
+
+\hspace{30px}If $C$ accepts $M'$, reject, else accept."
+
+\vspace{5px}$C$ decides similar to $A_{TM}$ which is undecidable, a contradiction. \\
+$\therefore FINITE_{TM}$ is undecidable.
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 2. There Can Only Be ONE}
+
+Let $ONE_{TM} = \{\langle M\rangle \,|\, M$ is a TM that accepts exactly 1 string$\}$.
+\\Prove that $ONE_{TM}$ is undecidable.
+
+\vspace{5px}\textbf{Solution ::}
+
+Suppose for the sake of contradiction that $ONE_{TM}$ is deciable. Therefore a TM
+$S$ decides it.
+
+\vspace{5px}$A = $ "On input $\langle M, w\rangle$,
+
+\hspace{30px}Construct $M' =$ "On input $x$,
+
+\hspace{45px}If $x\ne w$, reject,
+
+\hspace{45px}else, return $M(w)$."
+
+\hspace{30px}Pass $M'$ to $S$. If $S$ accepts $M'$, accept, else reject."
+
+\vspace{5px}TM $A$ decides $A_{TM}$ which is undecidable, we have a
+contradiction. \\
+$\therefore$ $ONE_{TM}$ is undecidable.
+
+\line(1,0){358px}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 3. A LENGTH-y Decision}
+
+Let $LENGTHK_{TM} = \\\{\langle M, k\rangle \,|\, M$ is a TM that accepts all
+length-$k$ strings$\}$. \\
+Prove that $LENGTHK_{TM}$ is undecidable.
+
+\vspace{5px}\textbf{Solution ::}
+
+Suppose for the sake of contradiction that $LENGTHK_{TM}$ is deciable.\\
+Therefore a TM $Z$ decides it.
+
+\vspace{5px}$A =$ "On input $\langle M, w\rangle$,
+
+\hspace{30px}Construct $M' =$ "On input $k$,
+
+\hspace{45px}If $w$ does not have length $k$, reject.
+
+\hspace{45px}else, return $M(w)$."
+
+\hspace{30px}Pass $\langle M', k\rangle$ to $Z$ and run this machine for
+$LENGTHK_{TM}$, 
+
+\hspace{30px}if $M'$ accepts, $Z$ accepts, else $Z$ rejects."
+
+\vspace{5px}TM $Z$ decides similar to $A_{TM}$ which is undecidable, a contradiction. \\
+$\therefore LENGTHK_{TM}$ is undecidable.
+
+\end{document}
