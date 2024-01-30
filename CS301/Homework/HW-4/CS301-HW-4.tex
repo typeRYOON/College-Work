@@ -1,0 +1,152 @@
+\documentclass[11pt]{article}
+\usepackage{minted}
+\usepackage{amsfonts, amssymb, amsmath, float}
+\usepackage{enumerate, esint, nicefrac, algorithm2e}
+\parindent 0px
+\date{\today}
+\title{CS301 :: Homework 4}
+\author{Ryan Magdaleno}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 1. Context Free Grammars}
+
+Produce the CFG for the following language $L$. Let $\sum=\{a,b,c,d\}$
+$$L = \left\{c^{w+x}a^{y+x}b^zc^zd^{w+x} : w, x\ge0;y,z\ge1\right\}$$
+\vspace{5px}\textbf{Solution ::}
+\begin{align}
+    S&\longrightarrow cSd \,|\, A \\
+    A&\longrightarrow caA \,|\, B \\
+    B&\longrightarrow aBd \,|\, aCd \\
+    C&\longrightarrow bCc \,|\, bc
+\end{align}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 2. Chomsky Normal Form} 
+
+Convert the following grammar into CNF, $\sum = \{0,1\}.$ \\
+Show your work at each of the five steps: \\
+\textbf{START, BIN, DEL, UNIT, TERM.}
+
+$S\longrightarrow 0XY \,|\, Y$ \\
+$X\longrightarrow 1X \,|\, Y$ \\
+$Y\longrightarrow S \,|\, 0 \,|\, \epsilon$
+
+\vspace{5px}\textbf{Solution ::}
+
+\textbf{START ::}
+\begin{align}
+    S_0&\longrightarrow S \\
+    S&\longrightarrow 0XY \,|\, Y \\
+    X&\longrightarrow 1X \,|\, Y \\
+    Y&\longrightarrow S \,|\, 0 \,|\, \epsilon
+\end{align}
+\line(1,0){358px}
+
+\textbf{BIN ::}
+\begin{align}
+    S_0&\longrightarrow S\\
+    S&\longrightarrow 0S_1 \,|\, Y \\
+    S_1&\longrightarrow XY\\
+    X&\longrightarrow 1X \,|\, Y \\
+    Y&\longrightarrow S \,|\, 0 \,|\, \epsilon
+\end{align}
+\line(1,0){358px}
+
+\textbf{DEL ::}
+\begin{align}
+    S_0&\longrightarrow S \,|\, \epsilon \\
+    S&\longrightarrow 0S_1 \,|\, Y \,|\, 0 \\
+    S_1&\longrightarrow XY \,|\, X \,|\, Y \\
+    X&\longrightarrow 1X \,|\, Y \,|\, 1 \\
+    Y&\longrightarrow S \,|\, 0
+\end{align}
+\pagebreak
+
+\textbf{UNIT ::}
+\begin{align}
+    S_0&\longrightarrow \epsilon \,|\, 0S_1 \,|\, 0 \\
+    S&\longrightarrow 0S_1 \,|\, 0 \\
+    S_1&\longrightarrow XY \,|\, 1X \,|\, 0S_1 \,|\, 1 \,|\, 0 \\
+    X&\longrightarrow 1X \,|\, 0S_1 \,|\, 1 \,|\, 0 \\
+    Y&\longrightarrow 0S_1 \,|\, 0
+\end{align}
+\line(1,0){358px}
+
+\textbf{TERM ::}
+\begin{align}
+    S_0&\longrightarrow \epsilon \,|\, U_0S_1 \,|\, 0 \\
+    S&\longrightarrow U_0S_1 \,|\, 0 \\
+    S_1&\longrightarrow XY \,|\, U_1X \,|\, U_0S \,|\, 1 \,|\, 0 \\
+    X&\longrightarrow U_1X \,|\, U_0S_1 \,|\, 1 \,|\, 0 \\
+    Y&\longrightarrow U_0S_1 \,|\, 0 \\
+    U_0&\longrightarrow 0 \\
+    U_1&\longrightarrow 1
+\end{align}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 3. Non-context free Proof}
+
+Prove that the following language is not context free. Let $\sum = \{a,b,c\}$
+$$L = \{a^nb^nc^i : n < i < 2n\}$$
+
+\vspace{5px}\textbf{Solution ::}
+
+I assume $n=0$ isn't possible because $0 < 0+1 < 2(0)$ isn't true. \\
+I assume $n=1$ isn't possible because $0 < 1+1 < 2(1)$ isn't true.
+
+\vspace{7px}Suppose, for the sake of contradiction, that $L$ is context free. Then by
+definition, there must be a CFG $G$ with pumping length $p$ that generates it. \\
+Let $s = a^pb^pc^{p+1}$. \\
+By the pumping lemma, $s$ can be partitioned into $u, v, x, y, z$ such that $|vxy| \le p$
+and $|vy|\ge 1$. We proceed on cases for $v$ and $y$:
+
+\vspace{7px}If $v$ and $y$ consist of the same characters:
+\begin{itemize}
+\item
+If $v$ and $y$ consist of only $a$'s or only $b$'s then $vy$ consist of $k$ $a$'s or
+$k$ $b$'s, for some $k\ge 1$. Because $|vxy|\le p$, $vxy$ is contained within the
+$p$ $a$'s or $p$ $b$'s. Then $uxz$ is equal to either $a^{p-k}b^pc^{p+1}$ or 
+$a^pb^pc^{p-k+1}$, none of which are within $L$ when $v/y$ is pumped down,
+thus $uv^0xy^0z$ is not within $L$, which is a contradiction.
+
+\item 
+If $v$ and $y$ consist of only $c$'s then $vy$ must consist of $k$ $c$'s, for some 
+$k\ge 1$. Because $|vxy|\le p$, $vxy$ is contained within the $p+1$ $c$'s. Therefore
+$uxz$ is equal to $a^pb^pc^{p-k+1}$. From this we can see that $c^{p-k+1}$ will
+make it not be contained within $L$ due to $k$ needing to be $\ge 1$ when we
+pump down, this we've reached a contradiction.
+\end{itemize}
+
+\vspace{7px}If $v$ and $y$ consist of different characters:
+\begin{itemize}
+\item 
+If $v$ consists of only $a$'s and $y$ consists of only $b$'s, for simplicity sake let's
+say they contain the same number of their respective character, say $k$ characters
+for each, for some $k\ge 1$. Because $|vxy|\le p$, $vxy$ should be contained within
+the last $k$ characters of $a$, and the first $k$ characters of $b$.
+
+From this we can see that $uxz$ is equal to $a^{p-k}b^{p-k}c^{p+1}$. From this now,
+we can see that this will not be within $L$ if we pump down and are left with
+$a^{p-k}b^{p-k}c^{p+1}$, this is not within $L$ because $k$ must be $\ge 1$,
+causing a contradiction.
+
+\item
+If $v$ consists of only $b$'s and $y$ consists of only $c$'s, for simplicity sake let's
+say they contain the same number of their respective characters, say $k$ characters
+for each, for some $k\ge 1$. \\Because $|vxy|\le p$, $vxy$ should be contained within
+the last $k$ \\characters of $b$, and the first $k$ characters of $c.$ From this
+we can see that $uxz$ is equal to $a^pb^{p-k}c^{p-k+1}$, when we pump down we are
+left with that result, which falls out of $L$, thus causing a contradiction.
+\end{itemize}
+All cases result in a contradiction of the pumping lemma.\\
+$\therefore L$ is not context-free.
+
+\end{document}
