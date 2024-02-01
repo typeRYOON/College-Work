@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+\usepackage{minted}
+\usepackage{amsfonts, amssymb, amsmath, float}
+\usepackage{enumerate, esint, nicefrac, algorithm2e}
+\parindent 0px
+\date{November 27, 2022}
+\title{MATH 210 :\hspace{2px}: Homework 15}
+\author{Ryan Magdaleno}
+
+% Helpful ::
+% \line(1,0){358px}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 1.} \\
+$C = [0, 1]\times[0,1]$, Square.
+$$\ointctrclockwise \left(3^{\cos(x)}+6y^2\right)dx + 
+\left(\sin (5^y) + (6x^3)\right)dy$$
+\vspace{5px}\textbf{Solution ::}
+\begin{align}
+    \ointctrclockwise_{\partial D}Pdx+Qdy &= \iint_D (Q_x-P_y)\,dA \\
+    P &= 3^{\cos(x)}+6y^2 \\
+    P_y &= 12y \\
+    Q &= \sin (5^y) + 16x^3 \\
+    Q_x &= 48x^2 \\
+    \int_{0}^{1}\int_{0}^{1} 48x^2-12y\, dxdy &= 16x^3-12yx\bigg|^{x=1}_0 \\
+    &= 16-12y \\
+    \int_{0}^{1} 16-12y\, dy &= 16y-6y^2\bigg|^{y=1}_0 \\
+    &=16-6 \\
+    &= 6
+\end{align}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 2.} \\
+Centered at $(4,0)$, $0<r<3$.
+$$\oint_C (x-4)^3dy-y^3dx$$
+\vspace{5px}\textbf{Solution ::}
+\begin{align}
+    \oint_{C'}x^3dy-y^3dx& \\
+    \oint_{\partial D'}Pdx' + Qdy'&= \iint_{D'}(Q_x-P_y)\,dA' \\
+    P &= -y^3 \\
+    P_y &= -3y^2 \\
+    Q &= x^3 \\
+    Q_x &= 3x^2 \\
+    \iint_{D'}3x^2 - (-3y^2)dA' &= \iint_{D'}3x^2+3y^2 dA' \\
+\end{align}
+Convert to polar coordinates:
+\begin{align}
+    \int_{0}^{2\pi}\int_{0}^{3}3r^2r\,drd\theta &= \frac{3r^4}{4}\bigg|^{r=3}_0 =
+    \frac{243}{4} \\
+    \int_{0}^{2\pi}\frac{243}{4}d\theta &= \frac{243\theta}{4}\bigg|^{\theta=2\pi}_0 \\
+    &=\frac{243(2\pi)}{4} \\
+    &= \frac{243\pi}{2}
+\end{align}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 3.} \\
+Ellipse: 
+$$\frac{x^2}{1}+\frac{y^2}{16}=1$$
+\vspace{5px}\textbf{Solution ::} \\
+Use:
+$$\text{area}(D)=\frac{1}{2}\oint_C x\,dy-y\,dx$$
+Simply:
+$$\frac{x^2}{a^2}+\frac{y^2}{b^2}=1$$
+Let:
+\begin{align}
+    x&=a\cos(\theta) \\
+    dx&= -a\sin(\theta)\,d\theta \\
+    y &= b\sin(\theta) \\
+    dy &= b\cos(\theta)\,d\theta
+\end{align}
+So:
+\begin{align}
+    \text{area}(D)&=\frac{1}{2}\oint_C (a\cos(\theta))(b\cos(\theta)\,d\theta)-
+    (b\sin(\theta))(-a\sin(\theta)\,d\theta) \\
+    &= \frac{1}{2}ab\cdot\int_{0}^{2\pi}(\cos^2(\theta) + \sin^2(\theta))
+    \,d\theta \\
+    &=\frac{1}{2}ab\cdot\int_{0}^{2\pi}1\,d\theta =
+    \frac{1}{2}ab\cdot\theta\bigg|^{2\pi}_0 \\
+    &= \frac{1}{2}ab(2\pi) \\
+    &= \pi ab
+\end{align}
+So:
+\begin{align}
+    a&=\sqrt{1} = 1 \\
+    b&=\sqrt{16}=4 \\
+    1\cdot 4\cdot\pi &= 4\pi
+\end{align}
+\end{document}
