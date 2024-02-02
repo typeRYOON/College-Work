@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+\usepackage{minted}
+\usepackage{amsfonts, amssymb, amsmath, float}
+\usepackage{enumerate, esint, nicefrac, algorithm2e}
+\parindent 0px
+\date{September 9, 2022}
+\title{MATH210 :\hspace{2px}: Homework 1}
+\author{Ryan Magdaleno}
+
+% Helpful ::
+% \line(1,0){358px}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 1.}
+$$\text{Let }u = \langle2,1,-1\rangle\text{ and }v=\langle1,2,1\rangle.$$
+\vspace{5px}\textbf{Solution ::}
+\begin{enumerate}[a)]
+\item 
+\begin{align}
+    \text{proj}_vu &= \left(\frac{u\cdot v}{|v|^2}\right)\cdot v \\
+    w &= \left(\frac{2(1)+1(2)-1(1)}{\left(\sqrt{1^2+2^2+1^2}\right)^2}\right)
+    \cdot \langle1,2,1\rangle \\
+    w &= \frac{3}{6}\langle1,2,1\rangle = \frac{1}{2}\langle1,2,1\rangle \\
+    w &= \left\langle\frac{1}{2},1,\frac{1}{2}\right\rangle
+\end{align}
+\item
+$u-w$ or $u+(-w)$:
+\begin{align}
+    \langle2,1,-1\rangle &- \left\langle\frac{1}{2},1,\frac{1}{2}\right\rangle \\
+    u-w &= \langle1.5,0,-1.5\rangle
+\end{align}
+\item 
+Show that $u-w$ is orthagonal to $v$.
+$$u-w\cdot v = 1.5(1)+0(2)-1.5(1) = 0$$
+$\therefore u-w$ and $v$ are orthagonal. 
+\pagebreak
+
+\item
+Write $v$ as the sum of orthagonal perp. to $v$.
+\begin{align}
+    u_1 &= u_1 + u_2 = \text{proj}_vu + (u-\text{proj}_vu) \\
+    u_1 &= \left(\frac{u\cdot v}{v\cdot v}\right)\cdot v = \langle0.5,1,0.5\rangle \\
+    u_2 &= \langle2,1,-1\rangle - \langle0.5,1,0.5\rangle \\
+    u_2 &= \langle1.5, 0, -1.5\rangle \\
+    u &= \langle0.5,1,0.5\rangle + \langle1.5,0,-1.5\rangle \\
+    u &= \langle2,1,-1\rangle
+\end{align}
+
+\end{enumerate}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 2.}
+$$|u| = 1, |v| = 3, u\cdot v = -2$$
+\vspace{5px}\textbf{Solution ::}
+\begin{enumerate}[a)]
+\item 
+\begin{align}
+    |u + v| &= \sqrt{|u+v|^2} \\
+    &= \sqrt{|u|^2 + u\cdot v+u\cdot v+|v|^2} \\
+    &= \sqrt{1^2 + (-2)+(-2)+3^2} \\
+    |u+v| &= \sqrt{6}
+\end{align}
+
+\item $||(u+2v)\times v||$
+\begin{align}
+    |u+2v| &= \sqrt{|u|^2+u\cdot 2v+u\cdot2v+2|v|^2} \\
+    &= \sqrt{1^2 + (-2) + (-2) + 18} \\
+    &= \sqrt{15}
+\end{align}
+\end{enumerate}
+
+\end{document}
