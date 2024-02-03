@@ -32,7 +32,7 @@
 > [Project 5 : : March Madness Predictor w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-5)
 ---
 > ### CS151 : : Mathematical Foundations of Computing
-> test
+> [Homework 1 : : Propositional Logic.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-1/CS151-HW-1.pdf)
 ---
 > ### CS211 : : Programming Practicum
 > test
