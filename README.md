@@ -41,18 +41,27 @@
 > [Project 4 : : Wordle Solver w/ C.](https://github.com/typeRYOON/College-Work/blob/main/CS211/Project-4 "CS211-Project-4")
 ---
 > ### CS251 : : Data Structures
-> [Project 1 : : Gerrymandering Anaylysis w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-1 "CS251-Project-1")  
-> [Project 2 : : Music Library w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-2 "CS251-Project-2")  
-> [Project 3 : : Matrix Class Implementation w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-3 "CS251-Project-3")  
-> [Project 4 : : Canvas Class w/ C++ Polymorphism.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-4 "CS251-Project-4")  
-> [Project 5 : : BST Priority Queue Implementation w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-5 "CS251-Project-5")  
-> [Project 6 : : OpenStreetMap Dijkstra Search w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-6 "CS251-Project-6")  
+> [Project 1 : : Gerrymandering Anaylysis w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-1 "CS251-Project-1")  
+> [Project 2 : : Music Library w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-2 "CS251-Project-2")  
+> [Project 3 : : Matrix Class Implementation w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-3 "CS251-Project-3")  
+> [Project 4 : : Canvas Class w/ C++ Polymorphism.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-4 "CS251-Project-4")  
+> [Project 5 : : BST Priority Queue Implementation w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-5 "CS251-Project-5")  
+> [Project 6 : : OpenStreetMap Dijkstra Search w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-6 "CS251-Project-6")  
 ---
 > ### CS261 : : Machine Organization
-> test
+> [Project 1 : : Bomb Lab.](https://github.com/typeRYOON/College-Work/tree/main/CS261/Bomb-Lab "CS261-Project-1")  
+> [Project 2 : : Attack Lab.](https://github.com/typeRYOON/College-Work/tree/main/CS261/Attack-Lab "CS261-Project-2")
 ---
 > ### CS301 : : Languages and Automata
-> test
+> [Homework 1 : : DFAs, NFAs, Closure Proof.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Homework/HW-1/CS301-HW-1.pdf "CS301-HW-1")  
+> [Homework 2 : : NFA to DFA, Regex to NFA, NFA to Regex.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Homework/HW-2/CS401-HW-2.pdf "CS301-HW-2")  
+> [Homework 3 : : Regular Grammars, Context Free Grammars, PDAs.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Homework/HW-3/CS301-HW-3.pdf "CS301-HW-3")  
+> [Homework 4 : : CFGs, Chomsky Normal Form, Non-Context Free Proof.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Homework/HW-4/CS301-HW-4.pdf "CS301-HW-4")  
+> [Homework 5 : : Turing Machines, Decidable Languages.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Homework/HW-5/CS301-HW-5.pdf "CS301-HW-5")  
+> [Homework 6 : : Undecidability.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Homework/HW-6/CS401-HW-6.pdf "CS301-HW-6")  
+> [Exam 1 : : Midterm 1.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Exams/Exam-1/CS301-Exam-1.pdf "CS301-Exam-1")  
+> [Exam 2 : : Midterm 2.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Exams/Exam-2/CS301-Exam-2.pdf "CS301-Exam-2")  
+> [Exam 3 : : Final Exam.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Exams/Exam-3/CS301-Exam-3.pdf "CS301-Exam-3")  
 ---
 > ### CS341 : : Programming Language Design and Implementation
 > test
