@@ -5,15 +5,19 @@
 > [**CS211 : : Programming Practicum**](#cs211---programming-practicum)  
 > [**CS251 : : Data Structures**](#cs251---data-structures)  
 > [**CS261 : : Machine Organization**](#cs261---machine-organization)  
-> [**CS301 : : **](#cs301---languages-and-automata)  
-> [**CS341 : : **](#cs341---programming-language-design-and-implementation)  
-> [**CS342 : : **](#cs342---software-design)  
-> [**CS361 : : **](#)  
-> [**CS362 : : **](#)  
-> [**CS377 : : **](#)  
-> [**CS401 : : **](#)  
-> [**CS440 : : **](#)  
-> [**CS442 : : **](#)  
+> [**CS301 : : Languages and Automata**](#cs301---languages-and-automata)  
+> [**CS341 : : Programming Language Design and Implementation**](#cs341---programming-language-design-and-implementation)  
+> [**CS342 : : Software Design**](#cs342---software-design)  
+> [**CS361 : : Systems Programming**](#cs361---systems-programming)  
+> [**CS362 : : Computer Design**](#cs362---computer-design)  
+> [**CS377 : : Ethical Issues in Computing**](#cs377---ethical-issues-in-computing)  
+> [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i)  
+> [**CS440 : : Software Engineering I**](#cs440---software-engineering-i)  
+> [**CS442 : : Software Engineering II**](#cs442---software-engineering-ii)  
+> [**MATH181 : : Calculus II**](#math181---calculus-ii)  
+> [**MATH210 : : Calculus III**](#math210---calculus-iii)  
+> [**MATH215 : : Introduction to Advanced Mathematics**](#math215---introduction-to-advanced-mathematics)  
+> [**MATH310 : : Applied Linear Algebra**](#math310---applied-linear-algebra)  
 
 > ### CS111 : : Program Design I
 > test
@@ -49,4 +53,25 @@
 > test
 
 > ### CS377 : : Ethical Issues in Computing
+> test
+
+> ### CS401 : : Computer Algorithms I
+> test
+
+> ### CS440 : : Software Engineering I
+> test
+
+> ### CS442 : : Software Engineering II
+> test
+
+> ### MATH181 : : Calculus II
+> test
+
+> ### MATH210 : : Calculus III
+> test
+
+> ### MATH215 : : Introduction to Advanced Mathematics
+> test
+
+> ### MATH310 : : Applied Linear Algebra
 > test
