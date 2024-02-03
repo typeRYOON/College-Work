@@ -25,17 +25,20 @@
 > [Project 3 : : Data Analysis w/ Python.](https://github.com/typeRYOON/College-Work/tree/main/CS111/Project-3 "CS111-Project-3")
 ---
 > ### CS141 : : Program Design II
-> [Project 1 : : Matryoshka Dolls to Console w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-1)  
-> [Project 2 : : Chessboard Knight Movement w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-2)  
-> [Project 3 : : Wordle w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-3)  
-> [Project 4 : : Billboard Analysis w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-4)  
-> [Project 5 : : March Madness Predictor w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-5)
+> [Project 1 : : Matryoshka Dolls to Console w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-1 "CS141-Project-1")  
+> [Project 2 : : Chessboard Knight Movement w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-2 "CS141-Project-2")  
+> [Project 3 : : Wordle w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-3 "CS141-Project-3")  
+> [Project 4 : : Billboard Analysis w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-4 "CS141-Project-4")  
+> [Project 5 : : March Madness Predictor w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-5 "CS141-Project-5")
 ---
 > ### CS151 : : Mathematical Foundations of Computing
-> [Homework 1 : : Propositional Logic.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-1/CS151-HW-1.pdf)
+> [Homework 1 : : Propositional Logic.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-1/CS151-HW-1.pdf "CS151-HW-1")
 ---
 > ### CS211 : : Programming Practicum
-> test
+> [Project 1 : : Hunt The Wumpus w/ C.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-1 "CS211-Project-1")  
+> [Project 2 : : Hunt The Wumpus w/ Dynamic C Arrays.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-2 "CS211-Project-2")  
+> [Project 3 : : Wordle Best Word Finder w/ C.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-3 "CS211-Project-3")  
+> [Project 4 : : Wordle Solver w/ C.](https://github.com/typeRYOON/College-Work/blob/main/CS211/Project-4 "CS211-Project-4")
 ---
 > ### CS251 : : Data Structures
 > test
