@@ -20,7 +20,9 @@
 > [**MATH310 : : Applied Linear Algebra**](#math310---applied-linear-algebra)  
 
 > ### CS111 : : Program Design I
-> test
+> [Project 1 : : Image Drawing w/ Python Turtles.](https://github.com/typeRYOON/College-Work/tree/main/CS111/Project-1)  
+> [Project 2 : : Frogger Game w/ Python Turtles.](https://github.com/typeRYOON/College-Work/tree/main/CS111/Project-2)  
+> [Project 3 : : Data Analysis w/ Python.](https://github.com/typeRYOON/College-Work/tree/main/CS111/Project-3)
 
 > ### CS141 : : Program Design II
 > test
