@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+\usepackage{minted}
+\usepackage{amsfonts, amssymb, amsmath, float}
+\usepackage{enumerate, esint, nicefrac, algorithm2e}
+\parindent 0px
+\date{November 11, 2022}
+\title{MATH210 :\hspace{2px}: Homework 13}
+\author{Ryan Magdaleno}
+
+% Helpful ::
+% \line(1,0){358px}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 1.} 
+$$\O (x,y) = \arctan \left(\frac{y}{3x}\right)$$
+\vspace{5px}\textbf{Solution ::}
+\begin{enumerate}[a)]
+\item 
+$$\nabla\O = \left\langle-\frac{3y}{y^2+9x^2}, \frac{3x}{y^2+9x^2}\right\rangle$$
+
+\item
+Domain of definition is:
+$$\{(x,y) : (x,y)\ne (0,0)\}$$
+
+\item $y=x$ parallel.
+
+$\langle1,1\rangle$ is parallel to the line $y=x$, the gradient $\nabla\O$ at
+point $(x,y)$ is parallel to $\langle1,1\rangle$ if there is a $\lambda$ such
+that:
+$$\left\langle\frac{-3y}{y^2+9x^2}, \frac{3x}{y^2+9x^2}\right\rangle
+=\langle1,1\rangle\cdot\lambda$$
+This happens when the $x$ and $y$ components of $\nabla\O$ are equal thus
+showing that the points on $x=y$ eccept $(0,0)$ are where $F$ is parallel to
+$y=x$.
+\end{enumerate}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 2.}
+$0\le r\le 2,\,\pi\le t\le \frac{3\pi}{2},\,x\le 0,\,y\le 0$
+$$\int_C xy\,ds$$
+\vspace{5px}\textbf{Solution ::}
+\begin{align}
+    r(t)&=\langle2\cos(t), 2\sin(t)\rangle,\,\,\pi\le t\le \frac{3\pi}{2} \\
+    |r'(t)| &= \sqrt{(-2\sin(t))^2 + (2\cos(t))^2} = 2 \\
+    f(r(t)) &= 2\cos(t)\cdot 2\sin(t) \\
+    \int_{\pi}^{\frac{3\pi}{2}}2\cos(t)\cdot 2\sin(t)\cdot 2\,dt &=
+    8\cdot \int_{\pi}^{\frac{3\pi}{2}}\cos(t)\sin(t)\,dt \\
+    u &= \sin(t) \\
+    du &= \cos (t) \\
+    \int u &= \frac{u^2}{2} = \frac{\sin^2(t)}{2}\bigg|^{\frac{3\pi}{2}}_\pi
+    = \frac{1}{2} \\
+    8\cdot \frac{1}{2} &= 4
+\end{align}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 3.}
+
+$C$ is line segment $(0,1,1)$ to $(1,0,1)$
+$$\int_C y-xz\,ds$$
+\vspace{5px}\textbf{Solution ::}
+\begin{align}
+    r(t) &= \langle0 + t, 1-t, 1\rangle,\,\,0\le t\le 1 \\
+    r'(t) &= \langle1,-1,0\rangle \\
+    |r'(t)| &= \sqrt{1^2 + (-1)^2} = \sqrt{2} \\
+    f(r(t)) &= (1-t)-t(1) = 1-2t \\
+    \int_{0}^{1} (1-2t)\cdot \sqrt{2}\,dt &= \sqrt{2}(1-1) \\
+    &= 0
+\end{align}
+\end{document}
