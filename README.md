@@ -16,11 +16,18 @@
 > [**CS361 : : Systems Programming**](#cs361---systems-programming "CS361")  
 > [**CS362 : : Computer Design**](#cs362---computer-design "CS362")  
 > [**CS377 : : Ethical Issues in Computing**](#cs377---ethical-issues-in-computing "CS377")  
-> [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")   
+> [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")  
+> [**CSTE : : CS Technical Elective 1**](#cste---cs-technical-elective-1 "CSTE-1")  
+> [**CSTE : : CS Technical Elective 2**](#cste---cs-technical-elective-2 "CSTE-2")  
+> [**CSTE : : CS Technical Elective 3**](#cste---cs-technical-elective-3 "CSTE-3")  
+> [**CSTE : : CS Technical Elective 4**](#cste---cs-technical-elective-4 "CSTE-4")  
+> [**CSTE : : CS Technical Elective 5**](#cste---cs-technical-elective-5 "CSTE-5")  
+> [**CSTE : : CS Technical Elective 6**](#cste---cs-technical-elective-6 "CSTE-6")  
 > [**MATH181 : : Calculus II**](#math181---calculus-ii "MATH181")  
 > [**MATH210 : : Calculus III**](#math210---calculus-iii "MATH210")  
 > [**MATH215 : : Introduction to Advanced Mathematics**](#math215---introduction-to-advanced-mathematics "MATH215")  
 > [**MATH310 : : Applied Linear Algebra**](#math310---applied-linear-algebra "MATH310")  
+
 ---
 > ### CS111 : : Program Design I
 > [Project 1 : : Image Drawing w/ Python Turtles.](https://github.com/typeRYOON/College-Work/tree/main/CS111/Project-1 "CS111-Project-1")  
