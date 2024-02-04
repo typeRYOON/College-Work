@@ -145,14 +145,16 @@
 > [Homework 12.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-12/MATH210-HW-12.pdf "MATH210-HW-12")  
 > [Homework 13.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-13/MATH210-HW-13.pdf "MATH210-HW-13")  
 > [Homework 14.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-14/MATH210-HW-14.pdf "MATH210-HW-14")  
-> [Homework 15.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-15/MATH210-HW-15.pdf "MATH210-HW-15")
-> [Exam 1 : : Midterm 1.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Exams/Exam-1/MATH210-Exam-1.pdf "MATH210-Exam-1")
-> [Exam 2 : : Midterm 2.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Exams/Exam-2/MATH210-Exam-2.pdf "MATH210-Exam-2")  
-> [Exam 3 : : Final Exam.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Exams/Exam-3/MATH210-Exam-3.pdf "MATH210-Exam-3")  
+> [Homework 15.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-15/MATH210-HW-15.pdf "MATH210-HW-15")  
+> [Exam 1 : : Midterm 1.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Exams/Exam-1/MATH210-Exam-1.pdf "MATH210-Exam-1")  
+> [Exam 2 : : Midterm 2.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Exams/Exam-2/MATH210-Exam-2.pdf "MATH210-Exam-2")   
+> [Exam 3 : : Final Exam.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Exams/Exam-3/MATH210-Exam-3.pdf "MATH210-Exam-3")   
 ---
 > ### MATH215 : : Introduction to Advanced Mathematics
 > Not taken yet.
 ---
 > ### MATH310 : : Applied Linear Algebra
-> Will add soon :)
+> [Exam 1 : : Midterm 1.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-1.pdf "MATH310-Exam-1")
+> [Exam 2 : : Midterm 2.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-2.pdf "MATH310-Exam-2")  
+> [Exam 3 : : Final Exam.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-3.pdf "MATH310-Exam-3")
 ---
