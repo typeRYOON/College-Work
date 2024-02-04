@@ -41,7 +41,7 @@
 > [Project 4 : : Wordle Solver w/ C.](https://github.com/typeRYOON/College-Work/blob/main/CS211/Project-4 "CS211-Project-4")
 ---
 > ### CS251 : : Data Structures
-> [Project 1 : : Gerrymandering Anaylysis w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-1 "CS251-Project-1")  
+> [Project 1 : : Gerrymandering Analysis w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-1 "CS251-Project-1")  
 > [Project 2 : : Music Library w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-2 "CS251-Project-2")  
 > [Project 3 : : Matrix Class Implementation w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-3 "CS251-Project-3")  
 > [Project 4 : : Canvas Class w/ C++ Polymorphism.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-4 "CS251-Project-4")  
@@ -64,10 +64,24 @@
 > [Exam 3 : : Final Exam.](https://github.com/typeRYOON/College-Work/blob/main/CS301/Exams/Exam-3/CS301-Exam-3.pdf "CS301-Exam-3")  
 ---
 > ### CS341 : : Programming Language Design and Implementation
-> test
+> [Homework 1 : : File to Console w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS341/Homework/HW-1 "CS341-HW-1")  
+> [Homework 2 : : String Analysis & Manipulation w/ F#.](https://github.com/typeRYOON/College-Work/tree/main/CS341/Homework/HW-2 "CS341-HW-2")  
+> [Homework 3 : : F# Function Implementations.](https://github.com/typeRYOON/College-Work/tree/main/CS341/Homework/HW-3 "CS341-HW-3")  
+> [Homework 4 : : Password Manager w/ Go.](https://github.com/typeRYOON/College-Work/tree/main/CS341/Homework/HW-4 "CS341-HW-4")  
+> [Project 1 : : Chessboard Class Implementation w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS341/Projects/Project-1 "CS341-Project-1")  
+> [Project 2 : : PPM Image Manipulation w/ F#.](https://github.com/typeRYOON/College-Work/tree/main/CS341/Projects/Project-2 "CS341-Project-2")  
+> [Project 3 : : PPM Image Shape Canvas w/ Go.](https://github.com/typeRYOON/College-Work/tree/main/CS341/Projects/Project-3 "CS341-Project-3")  
 ---
 > ### CS342 : : Software Design
-> test
+> [Homework 1 : : Maven & Java Intro.](https://github.com/typeRYOON/College-Work/blob/main/CS342/Homework/HW-1 "CS342-HW-1")  
+> [Homework 2 : : JUnit 5 Testing.](https://github.com/typeRYOON/College-Work/blob/main/CS342/Homework/HW-2 "CS342-HW-2")  
+> [Homework 3 : : JavaFX Basics.](https://github.com/typeRYOON/College-Work/blob/main/CS342/Homework/HW-3 "CS342-HW-3")  
+> [Homework 4 : : Proxy Class Design Pattern.](https://github.com/typeRYOON/College-Work/blob/main/CS342/Homework/HW-4 "CS342-HW-4")  
+> [Homework 5 : : JavaFX w/ FXML.](https://github.com/typeRYOON/College-Work/blob/main/CS342/Homework/HW-5 "CS342-HW-5")  
+> [Homework 6 : : Avoiding Data Races.](https://github.com/typeRYOON/College-Work/blob/main/CS342/Homework/HW-6 "CS342-HW-6")  
+> [Project 1 : : Data Structure Library w/ Java.](https://github.com/typeRYOON/College-Work/tree/main/CS342/Projects/Project-1 "Project 1")  
+> [Project 2 : : Baccarat Game GUI w/ Java and JavaFX.](https://github.com/typeRYOON/College-Work/tree/main/CS342/Projects/Project-2 "Project 2")  
+> [Project 3 : : Multi-Threaded Server/Client Game w/ Java.](https://github.com/typeRYOON/College-Work/tree/main/CS342/Projects/Project-3 "Project 3")  
 ---
 > ### CS361 : : Systems Programming
 > test
