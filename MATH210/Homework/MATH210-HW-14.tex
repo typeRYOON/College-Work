@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage{minted}
+\usepackage{amsfonts, amssymb, amsmath, float}
+\usepackage{enumerate, esint, nicefrac, algorithm2e}
+\parindent 0px
+\date{November 18, 2022}
+\title{MATH 210 :\hspace{2px}: Homework 14}
+\author{Ryan Magdaleno}
+
+% Helpful ::
+% \line(1,0){358px}
+
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 1.}
+
+$C=$ curve $y=x^2$, from $(0,0)$ to $(1, 1)$.
+$$\int_C x^2 dy+y^3 dx$$
+\vspace{5px}\textbf{Solution ::}
+\begin{align}
+    r(t) &= \left\langle t, t^2\right\rangle,\,\, 0\le t\le 1 \\
+    r'(t) &= \left\langle1, 2t\right\rangle  \\
+    x^2 &= t^2 \\
+    y^3 &= t^6 \\
+    \int_{0}^{1} 2t^3 + t^6 dt &= \frac{2t^4}{4} + \frac{t^7}{7}\bigg|^1_0 \\
+    &= \frac{1}{2} + \frac{1}{7} \\
+    &= \frac{9}{14}
+\end{align}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 2.}
+
+$C = $ circle, radius 3, centered at $(0, 0)$.
+$$\oint_C \frac{-y}{(x-5)^2+y^2}dx + \frac{x-5}{(x-5)^2 + y^2} dy$$
+\vspace{5px}\textbf{Solution ::}
+\begin{align}
+    F(x,y)&=\left\langle\frac{-y}{x^2}, \frac{x}{x^2 + y^2}\right\rangle \\
+    r(t)&= \langle3\cos(t), 3\sin(t)\rangle,\,\,0\le t\le 2\pi \\
+    r'(t) &= \langle-3\sin(t), 3\cos(t)\rangle,\,\,0\le t\le 2\pi \\
+    F(r(t)) &= \left\langle\frac{-\sin(t)}{3}, \frac{\cos(t)}{3}\right\rangle \\
+    F(r(t))\cdot r'(t) &= \sin^2(x) + \cos^2(x) = 1 \\
+    \int_{0}^{2\pi} 1\,dt &= 2\pi
+\end{align}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Problem 3.}
+
+$C$ on bi-line from $(0,0,0)$ to $(1,1,1)$, to $(2,1,1)$.
+$$F(x,y,z)=\left\langle2xy+2x, x^2-2yz^3, -6z-3z^2y^2\right\rangle$$
+$$f = x^2 + yx^2 + h(y,z)$$
+\vspace{5px}\textbf{Solution ::}
+\begin{align}
+    x^2 &= x^2-2yz^3 \\
+    \int -2yz^3 &= -z^3y^2 \\
+    \frac{\partial}{\partial z}(x^2 + yx^2) &= 0 \\
+    gz(y,z)&= -6z-3z^2y^2 \\
+    &= -z^3y^2 + h(z) \\
+    \frac{\partial}{\partial z}(-z^3y^2 + h(z)) &= -6z-3z^2y^2 \\
+    -3z^2y^2+hz(z) &= -6z-3z^2y^2 \\
+    hz(z) &= -6z \\
+    \int -6z\,dz &= -3z^2 \\
+    \O (x,y,z) &= x^2+yz^2-z^3y^2-3z^2 \\
+    \O (2,1,1) - \O (0,0,0)  &= 4 - 0 \\
+    &= 4
+\end{align}
+\end{document}
