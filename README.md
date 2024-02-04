@@ -17,12 +17,6 @@
 > [**CS362 : : Computer Design**](#cs362---computer-design "CS362")  
 > [**CS377 : : Ethical Issues in Computing**](#cs377---ethical-issues-in-computing "CS377")  
 > [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")  
-> [**CSTE : : CS Technical Elective 1**](#cste---cs-technical-elective-1 "CSTE-1")  
-> [**CSTE : : CS Technical Elective 2**](#cste---cs-technical-elective-2 "CSTE-2")  
-> [**CSTE : : CS Technical Elective 3**](#cste---cs-technical-elective-3 "CSTE-3")  
-> [**CSTE : : CS Technical Elective 4**](#cste---cs-technical-elective-4 "CSTE-4")  
-> [**CSTE : : CS Technical Elective 5**](#cste---cs-technical-elective-5 "CSTE-5")  
-> [**CSTE : : CS Technical Elective 6**](#cste---cs-technical-elective-6 "CSTE-6")  
 > [**MATH181 : : Calculus II**](#math181---calculus-ii "MATH181")  
 > [**MATH210 : : Calculus III**](#math210---calculus-iii "MATH210")  
 > [**MATH215 : : Introduction to Advanced Mathematics**](#math215---introduction-to-advanced-mathematics "MATH215")  
@@ -108,24 +102,6 @@
 > ### CS401 : : Computer Algorithms I
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
 > [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-2.pdf "CS401-HW-2")  
----
-> ### CSTE : : CS Technical Elective 1
-> Not taken yet.
----
-> ### CSTE : : CS Technical Elective 2
-> Not taken yet.
----
-> ### CSTE : : CS Technical Elective 3
-> Not taken yet.
----
-> ### CSTE : : CS Technical Elective 4
-> Not taken yet.
----
-> ### CSTE : : CS Technical Elective 5
-> Not taken yet.
----
-> ### CSTE : : CS Technical Elective 6
-> Not taken yet.
 ---
 > ### MATH181 : : Calculus II
 > Will add soon :)
