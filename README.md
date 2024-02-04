@@ -84,31 +84,37 @@
 > [Project 3 : : Multi-Threaded Server/Client Game w/ Java.](https://github.com/typeRYOON/College-Work/tree/main/CS342/Projects/Project-3 "Project 3")  
 ---
 > ### CS361 : : Systems Programming
-> test
+> Not taken yet.
 ---
 > ### CS362 : : Computer Design
-> test
+> [Homework 1 : : Series, Parallel Circuits.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-1 "CS362-HW-1")  
+> [Lab 1 : : Three Blinking Lights.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-01 "CS362-Lab-1")  
+> [Lab 2 : : Three Bit Counter.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-02 "CS362-Lab-2")  
+> [Lab 3 : : Liquid Crystal Display - LCD.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-03 "CS362-Lab-3")  
 ---
 > ### CS377 : : Ethical Issues in Computing
-> test
+> Not taken yet.
 ---
 > ### CS401 : : Computer Algorithms I
-> test
+> [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
+> [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-2.pdf "CS401-HW-2")  
 ---
 > ### CS440 : : Software Engineering I
-> test
+> Not taken yet.
 ---
 > ### CS442 : : Software Engineering II
-> test
+> Not taken yet.
 ---
 > ### MATH181 : : Calculus II
-> test
+> Will add soon :)
 ---
 > ### MATH210 : : Calculus III
-> test
-
+> [Homework 1.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-01 "MATH210-HW-1")  
+> [Homework 15.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-15 "MATH210-HW-15")  
+---
 > ### MATH215 : : Introduction to Advanced Mathematics
-> test
-
+> Not taken yet.
+---
 > ### MATH310 : : Applied Linear Algebra
-> test
+> Will add soon :)
+---
