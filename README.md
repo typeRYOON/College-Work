@@ -16,9 +16,7 @@
 > [**CS361 : : Systems Programming**](#cs361---systems-programming "CS361")  
 > [**CS362 : : Computer Design**](#cs362---computer-design "CS362")  
 > [**CS377 : : Ethical Issues in Computing**](#cs377---ethical-issues-in-computing "CS377")  
-> [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")  
-> [**CS440 : : Software Engineering I**](#cs440---software-engineering-i "CS440")  
-> [**CS442 : : Software Engineering II**](#cs442---software-engineering-ii "CS442")  
+> [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")   
 > [**MATH181 : : Calculus II**](#math181---calculus-ii "MATH181")  
 > [**MATH210 : : Calculus III**](#math210---calculus-iii "MATH210")  
 > [**MATH215 : : Introduction to Advanced Mathematics**](#math215---introduction-to-advanced-mathematics "MATH215")  
@@ -104,10 +102,22 @@
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
 > [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-2.pdf "CS401-HW-2")  
 ---
-> ### CS440 : : Software Engineering I
+> ### CSTE : : CS Technical Elective 1
 > Not taken yet.
 ---
-> ### CS442 : : Software Engineering II
+> ### CSTE : : CS Technical Elective 2
+> Not taken yet.
+---
+> ### CSTE : : CS Technical Elective 3
+> Not taken yet.
+---
+> ### CSTE : : CS Technical Elective 4
+> Not taken yet.
+---
+> ### CSTE : : CS Technical Elective 5
+> Not taken yet.
+---
+> ### CSTE : : CS Technical Elective 6
 > Not taken yet.
 ---
 > ### MATH181 : : Calculus II
