@@ -114,8 +114,8 @@
 > Will add soon :)
 ---
 > ### MATH210 : : Calculus III
-> [Homework 1.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-01 "MATH210-HW-1")  
-> [Homework 15.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-15 "MATH210-HW-15")  
+> [Homework 1.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-01/MATH210-HW-01.pdf "MATH210-HW-1")  
+> [Homework 15.](https://github.com/typeRYOON/College-Work/tree/main/MATH210/Homework/HW-15/MATH210-HW-15.pdf "MATH210-HW-15")  
 ---
 > ### MATH215 : : Introduction to Advanced Mathematics
 > Not taken yet.
