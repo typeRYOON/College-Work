@@ -154,7 +154,7 @@
 > Not taken yet.
 ---
 > ### MATH310 : : Applied Linear Algebra
-> [Exam 1 : : Midterm 1.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-1.pdf "MATH310-Exam-1")
-> [Exam 2 : : Midterm 2.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-2.pdf "MATH310-Exam-2")  
-> [Exam 3 : : Final Exam.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-3.pdf "MATH310-Exam-3")
+> [Exam 1 : : Midterm 1.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-1.pdf "MATH310-Exam-1")  
+> [Exam 2 : : Midterm 2.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-2.pdf "MATH310-Exam-2")   
+> [Exam 3 : : Final Exam.](https://github.com/typeRYOON/College-Work/tree/main/MATH310/Exams/Exam-1/MATH310-Exam-3.pdf "MATH310-Exam-3")  
 ---
