@@ -15,7 +15,6 @@
 > [**CS342 : : Software Design**](#cs342---software-design "CS342")  
 > [**CS361 : : Systems Programming**](#cs361---systems-programming "CS361")  
 > [**CS362 : : Computer Design**](#cs362---computer-design "CS362")  
-> [**CS377 : : Ethical Issues in Computing**](#cs377---ethical-issues-in-computing "CS377")  
 > [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")  
 > [**MATH181 : : Calculus II**](#math181---calculus-ii "MATH181")  
 > [**MATH210 : : Calculus III**](#math210---calculus-iii "MATH210")  
@@ -101,9 +100,6 @@
 > [Lab 2 : : Three Bit Counter.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-02 "CS362-Lab-2")  
 > [Lab 3 : : Liquid Crystal Display - LCD.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-03 "CS362-Lab-3")  
 > [Lab 4 : : Photoresistor (LDR - Light Dependent Resistor).](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-04 "CS362-Lab-4")
----
-> ### CS377 : : Ethical Issues in Computing
-> Not taken yet.
 ---
 > ### CS401 : : Computer Algorithms I
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
