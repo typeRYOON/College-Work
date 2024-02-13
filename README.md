@@ -25,7 +25,7 @@
 > ### Notable Work : :  
 > [CS251 : : Project 6 : : OpenStreetMap Dijkstra Search w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-6 "CS251-Project-6")  
 > [CS342 : : Project 3 : : Multi-Threaded Server/Client Game w/ Java.](https://github.com/typeRYOON/College-Work/tree/main/CS342/Projects/Project-3 "Project 3")  
-> [CS362 : : Project F : : VSRG-UNO-R3.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
+> [CS362 : : Project F : : VSRG-UNO-R3 w/ C++ & Arduino.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
 ---
 > ### CS111 : : Program Design I
 > [Project 1 : : Image Drawing w/ Python Turtles.](https://github.com/typeRYOON/College-Work/tree/main/CS111/Project-1 "CS111-Project-1")  
@@ -95,7 +95,7 @@
 > Not taken yet.
 ---
 > ### CS362 : : Computer Design
-> [Final Project : : VSRG-UNO-R3.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
+> [Final Project : : VSRG-UNO-R3 w/ C++ & Arduino.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
 > [Homework 1 : : Series, Parallel Circuits.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-1 "CS362-HW-1")  
 > [Lab 1 : : Three Blinking Lights.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-01 "CS362-Lab-1")  
 > [Lab 2 : : Three Bit Counter.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-02 "CS362-Lab-2")  
