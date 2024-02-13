@@ -95,11 +95,12 @@
 > Not taken yet.
 ---
 > ### CS362 : : Computer Design
-> [Final Project : : VSRG-UNO-R3 w/ C++ and Arduino.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
 > [Homework 1 : : Series, Parallel Circuits.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-1 "CS362-HW-1")  
+> [Final Project : : VSRG-UNO-R3 w/ C++ and Arduino.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
 > [Lab 1 : : Three Blinking Lights.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-01 "CS362-Lab-1")  
 > [Lab 2 : : Three Bit Counter.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-02 "CS362-Lab-2")  
 > [Lab 3 : : Liquid Crystal Display - LCD.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-03 "CS362-Lab-3")  
+> [Lab 4 : : Photoresistor (LDR - Light Dependent Resistor).](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-04 "CS362-Lab-4")
 ---
 > ### CS377 : : Ethical Issues in Computing
 > Not taken yet.
