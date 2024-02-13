@@ -101,7 +101,7 @@
 ---
 > ### CS401 : : Computer Algorithms I
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
-> [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-2.pdf "CS401-HW-2")  
+> [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-2/CS401-HW-2.pdf "CS401-HW-2")  
 ---
 > ### MATH181 : : Calculus II
 > Will add soon :)
