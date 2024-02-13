@@ -22,7 +22,7 @@
 > [**MATH215 : : Introduction to Advanced Mathematics**](#math215---introduction-to-advanced-mathematics "MATH215")  
 > [**MATH310 : : Applied Linear Algebra**](#math310---applied-linear-algebra "MATH310")
 ---  
-> ### Notable Projects : :  
+> ### Notable Work : :  
 > [CS251 : : Project 6 : : OpenStreetMap Dijkstra Search w/ C++.](https://github.com/typeRYOON/College-Work/tree/main/CS251/Project-6 "CS251-Project-6")  
 > [CS342 : : Project 3 : : Multi-Threaded Server/Client Game w/ Java.](https://github.com/typeRYOON/College-Work/tree/main/CS342/Projects/Project-3 "Project 3")  
 ---
