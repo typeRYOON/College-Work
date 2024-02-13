@@ -94,12 +94,15 @@
 > Not taken yet.
 ---
 > ### CS362 : : Computer Design
-> [Homework 1 : : Series, Parallel Circuits.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-1 "CS362-HW-1")  
+> [Homework 1 : :  Ohms Law & Circuits – Series, Parallel and Mixed.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-1 "CS362-HW-1")  
+> [Homework 2 : : CMOS, Boolean Algebra, DeMorgan’s Law, Universal Gates.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-2 "CS362-HW-2")  
+> [Homework 4 : : Lab Report for Lab 4.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-4 "CS362-HW-4")  
 > [Final Project : : VSRG-UNO-R3 w/ C++ and Arduino.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
 > [Lab 1 : : Three Blinking Lights.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-01 "CS362-Lab-1")  
 > [Lab 2 : : Three Bit Counter.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-02 "CS362-Lab-2")  
 > [Lab 3 : : Liquid Crystal Display - LCD.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-03 "CS362-Lab-3")  
-> [Lab 4 : : Photoresistor (LDR - Light Dependent Resistor).](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-04 "CS362-Lab-4")
+> [Lab 4 : : Photoresistor (LDR - Light Dependent Resistor).](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-04 "CS362-Lab-4")  
+> [Lab 5 : : Multiple Inputs and Outputs.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-05 "CS362-Lab-5")
 ---
 > ### CS401 : : Computer Algorithms I
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
