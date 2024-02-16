@@ -3,6 +3,8 @@
 > This is mainly to separate my personal/hobby projects.
 > But also with the amount of projects that are assigned,
 > this is also to organize them in an ordered fashion to see how I'd progress as a programmer.
+> 
+> Most projects especially in earlier classes can be built using standard compilation methods.
 ---
 > [**CS111 : : Program Design I**](#cs111---program-design-i "CS111")   
 > [**CS141 : : Program Design II**](#cs141---program-design-ii "CS141")  
