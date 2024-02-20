@@ -96,10 +96,10 @@
 > Not taken yet.
 ---
 > ### CS362 : : Computer Design
-> [Homework 1 : :  Ohms Law & Circuits – Series, Parallel and Mixed.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-1 "CS362-HW-1")  
-> [Homework 2 : : CMOS, Boolean Algebra, DeMorgan’s Law, Universal Gates.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-2 "CS362-HW-2")  
-> [Homework 3 : : K-Maps.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-3 "CS362-HW-3")  
-> [Homework 4 : : Lab Report for Lab 4.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-4 "CS362-HW-4")  
+> [Homework 1 : :  Ohms Law & Circuits – Series, Parallel and Mixed.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-1/CS362-HW-1.pdf "CS362-HW-1")  
+> [Homework 2 : : CMOS, Boolean Algebra, DeMorgan’s Law, Universal Gates.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-2/CS362-HW-2.pdf "CS362-HW-2")  
+> [Homework 3 : : K-Maps.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-3/CS362-HW-3.pdf "CS362-HW-3")  
+> [Homework 4 : : Lab Report for Lab 4.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-4/CS362-HW-4.pdf "CS362-HW-4")  
 > [Final Project : : VSRG-UNO-R3 w/ C++ and Arduino.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
 > [Lab 1 : : Three Blinking Lights.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-01 "CS362-Lab-1")  
 > [Lab 2 : : Three Bit Counter.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-02 "CS362-Lab-2")  
@@ -110,6 +110,7 @@
 > ### CS401 : : Computer Algorithms I
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
 > [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-2/CS401-HW-2.pdf "CS401-HW-2")  
+> [Homework 3 : : Divide and Conquer Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-3/CS401-HW-3.pdf "CS401-HW-3")
 ---
 > ### MATH181 : : Calculus II
 > Will add soon :)
