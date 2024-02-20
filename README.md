@@ -98,6 +98,7 @@
 > ### CS362 : : Computer Design
 > [Homework 1 : :  Ohms Law & Circuits – Series, Parallel and Mixed.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-1 "CS362-HW-1")  
 > [Homework 2 : : CMOS, Boolean Algebra, DeMorgan’s Law, Universal Gates.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-2 "CS362-HW-2")  
+> [Homework 3 : : K-Maps.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-3 "CS362-HW-3")  
 > [Homework 4 : : Lab Report for Lab 4.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Homework/HW-4 "CS362-HW-4")  
 > [Final Project : : VSRG-UNO-R3 w/ C++ and Arduino.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")  
 > [Lab 1 : : Three Blinking Lights.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-01 "CS362-Lab-1")  
