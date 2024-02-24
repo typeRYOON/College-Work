@@ -105,7 +105,8 @@
 > [Lab 2 : : Three Bit Counter.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-02 "CS362-Lab-2")  
 > [Lab 3 : : Liquid Crystal Display - LCD.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-03 "CS362-Lab-3")  
 > [Lab 4 : : Photoresistor (LDR - Light Dependent Resistor).](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-04 "CS362-Lab-4")  
-> [Lab 5 : : Multiple Inputs and Outputs.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-05 "CS362-Lab-5")
+> [Lab 5 : : Multiple Inputs and Outputs.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-05 "CS362-Lab-5")  
+> [Lab 6 : : Computer I/O.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-06 "CS362-Lab-6")
 ---
 > ### CS401 : : Computer Algorithms I
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
