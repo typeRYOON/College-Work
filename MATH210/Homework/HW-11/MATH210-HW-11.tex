@@ -1,0 +1,226 @@
+\documentclass{article}
+
+\usepackage[bookmarksnumbered, colorlinks, plainpages]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+
+\graphicspath{ {./img/} }
+\usetikzlibrary{automata, positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1}
+    continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1}
+    continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{Problem \arabic{homeworkProblemCounter}}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+
+\newenvironment{homeworkProblem}[1]{
+    \section{Problem \arabic{homeworkProblemCounter}{#1}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ 11}
+\newcommand{\hmwkDueDate}{November 1, 2022}
+\newcommand{\hmwkClass}{MATH 210}
+\newcommand{\hmwkClassTime}{1:00pm}
+\newcommand{\hmwkClassInstructor}{Professor Smith}
+\newcommand{\hmwkAuthorName}{\textbf{Ryan Magdaleno}}
+\newcommand{\hwline}{\begin{center}\line(1,0){358px}\end{center}}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 11:59pm}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\hmwkAuthorName\\\href{mailto:rmagd2@uic.edu}{rmagd2@uic.edu}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}
+\stepcounter{partCounter}\\}
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral ds
+\newcommand{\dx}{\mathrm{d}x}
+\newcommand{\D}[1]{\mathrm{d}#1}
+
+% Image insertion
+\newcommand{\img}[2]{\begin{center}\includegraphics[scale=#1]{#2}\end{center}}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}\\}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \hspace{55pt}\(U = \{0\le z\le36 - x^2-y^2\)\}, \(x = r\cos(\theta)\), 
+    \(y = r\sin(\theta)\)
+    \[
+        \int_{0}^{2\pi}\hspace{-9pt}\int_{0}^{6}\hspace{-5pt}\int_{0}^{36-r^2}
+        r\ \D{z}\D{r}\D{\theta}
+    \]
+    \hwline\solution
+    \vspace{-5pt}
+    \begin{align*}
+        \int_{0}^{36-r^2} r\ \D{z} &= rz\bigg|_0^{36-r^2} = 36r-r^3 \\
+        \int_{0}^{6}36r-r^3\ \D{r} &= 18r^2 - \frac{r^4}{4}\bigg|_0^6 = 648 - 324 = 324
+        \\ \int_{0}^{2\pi} 324\ \D{\theta} &= 324\theta\bigg|_0^{2\pi} = \boxed{648\pi}
+    \end{align*}
+\end{homeworkProblem}
+
+\hwline
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \hspace{55pt}\(U = \{0\le x^2 + y^2\le 1, 0\le z\le 5-x-y\}\)
+    \[
+        \int_{0}^{2\pi}\hspace{-5pt}\int_{0}^{1}
+        \hspace{-3pt}\int_{0}^{5-r\cos(\theta)-r\sin(\theta)}
+        r\ \D{z}\D{r}\D{\theta}
+    \]
+    \hwline\solution
+    \vspace{-5pt}
+    \begin{align*}
+        \int_{0}^{5-r\cos(\theta)-r\sin(\theta)}r\ \D{z} &= 
+        rz\bigg|_0^{5-r\cos(\theta)-r\sin(\theta)}
+        = 5r-r^2\cos(\theta)-
+        r^2\sin(\theta) \\
+        \int_{0}^{1}5r-r^2\cos(\theta)-r^2\sin(\theta)\ \D{r} &= \frac{5r^2}{2}-
+        \frac{r^2}{3}\cos(\theta) - \frac{r^2}{3}\sin(\theta)\bigg|_0^1 \\
+        \int_{0}^{2\pi}\frac{5}{2} - \frac{\cos(\theta)}{3} - \frac{\sin(\theta)}{3}
+        \ \D{\theta} &= 5\pi - 0 - 0 = \boxed{5\pi}
+    \end{align*}
+\end{homeworkProblem}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \hspace{55pt}\(0\le\rho\le 3\), \(0\le\theta\le\frac{\pi}{2}\),
+    \(0\le\phi\le\frac{\pi}{2}\), \(y = \rho\sin(\theta)\sin(\phi)\),
+    1st octant.
+    \[
+        \int\hspace{-5pt}\int\hspace{-5pt}\int_V y\ \D{V}
+    \]
+    \hwline\solution
+    \vspace{-5pt}
+    \begin{align*}
+        \int_{0}^{\frac{\pi}{2}}\hspace{-5pt}\int_{0}^{\frac{\pi}{2}}
+        \hspace{-5pt}\int_{0}^{3} \rho\sin(\theta)\sin(\phi)\rho^2\sin(\phi)
+        \ \D{\rho}\D{\phi}\D{\theta} &=
+        \int_{0}^{\frac{\pi}{2}}\hspace{-5pt}\int_{0}^{\frac{\pi}{2}}
+        \hspace{-5pt}\int_{0}^{3} \sin^2 (\phi)\sin(\theta)\rho^3
+        \ \D{\rho}\D{\phi}\D{\theta} \\
+        \int\rho^3\ \D{\rho} &= \frac{\rho^4}{4}\bigg|^3_0 = \frac{81}{4} \\
+        \frac{81}{4}\cdot \int_{0}^{\frac{\pi}{2}}
+        \hspace{-5pt}\int_{0}^{\frac{\pi}{2}} \frac{\sin^2(\phi)\sin(\theta)}
+        {4}\ \D{\phi}\D{\theta} &= \int\sin^2 (\phi)\ \D{\phi} \\
+        \frac{81\sin(\theta)\phi}{8} - \frac{81\sin(\theta)\sin(2\phi)}{16} &=
+        \frac{81\sin(\theta)\left(\phi -\frac{\sin(2\phi)}{2}\right)}{8}\Bigg|^0_{\frac
+        {\pi}{2}} \\
+        &= \int_{0}^{\frac{\pi}{2}}\frac{81\pi\sin(\theta)}{16}\ \D{\theta} = -\cos
+        (\theta) \\
+        -\frac{81\pi\cos(\theta)}{16}\bigg|^{\frac{\pi}{2}}_0 &= 0 -
+        \left(-\frac{81\pi}{16}\right) = \boxed{\frac{81\pi}{16}}
+    \end{align*}
+\end{homeworkProblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
