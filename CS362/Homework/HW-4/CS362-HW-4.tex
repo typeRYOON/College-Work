@@ -1,0 +1,417 @@
+\documentclass{article}
+
+\usepackage{minted}
+\usepackage[bookmarksnumbered, colorlinks, plainpages]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{graphicx}
+
+\graphicspath{ {./img/} }
+\usetikzlibrary{automata, positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle}
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    %\nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    %\nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1}
+    %continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    %\nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1}
+    %continued on next page\ldots}\nobreak{}
+    %\stepcounter{#1}
+    %\nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+\setcounter{secnumdepth}{0}
+\newcounter{partCounter}
+\newcounter{homeworkProblemCounter}
+\setcounter{homeworkProblemCounter}{1}
+\nobreak\extramarks{}{}\nobreak{}
+
+%
+% Homework Problem Environment
+%
+
+\newenvironment{homeworkProblem}[1]{
+    %\section{Problem \arabic{homeworkProblemCounter}{#1}}
+    \setcounter{partCounter}{1}
+    %\enterProblemHeader{homeworkProblemCounter}
+}{
+    %\exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% Homework Details
+%   - Title
+%   - Due date
+%   - Class
+%   - Section/Time
+%   - Instructor
+%   - Author
+%
+
+\newcommand{\hmwkTitle}{Homework\ 4}
+\newcommand{\hmwkDueDate}{March 8, 2024}
+\newcommand{\hmwkClass}{CS 362}
+\newcommand{\hmwkClassTime}{11:00am}
+\newcommand{\hmwkClassInstructor}{Professor Troy}
+\newcommand{\hmwkAuthorName}{\textbf{Ryan Magdaleno}}
+\newcommand{\hwline}{\begin{center}\line(1,0){358px}\end{center}}
+
+%
+% Title Page
+%
+
+\title{
+    \vspace{2in}
+    \textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+    \normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate\ at 11:59pm}\\
+    \vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+    \vspace{3in}
+}
+
+\author{\hmwkAuthorName\\\href{mailto:rmagd2@uic.edu}{rmagd2@uic.edu}}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}
+\stepcounter{partCounter}\\}
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral ds
+\newcommand{\dx}{\mathrm{d}x}
+\newcommand{\D}[1]{\mathrm{d}#1}
+
+% Image insertion
+\newcommand{\img}[2]{\begin{center}\includegraphics[scale=#1]{#2}\end{center}}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}\\}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \subsection{1 Report Information}
+    \textbf{Title:} Lab Report for Lab 4: Photoresistor (LDR – Light Dependent Resistor)
+
+    \textbf{Name/NetID:} Ryan Magdaleno, rmagd2
+
+    \textbf{Lab Description:} The lab report outlines the creation of a circuit and 
+    program utilizing a photoresistor and a 16x2 display. The display indicates the 
+    relative amount of light in the room using five predefined text values: dark, 
+    partially dark, medium, fully lit, and brightly lit. These values are shown on the 
+    top line of the LCD display. The bottom line displays the number of milliseconds 
+    since the Arduino was last reset, continuously updating without using the delay() 
+    function. Determine the 5 light range values via testing.
+    \hwline
+\end{homeworkProblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \vspace{-20pt}\subsection{2 Hardware Required}
+    \begin{enumerate}
+        \item \vspace{-5pt}
+        1x Arduino Uno R3 Board
+        \item \vspace{-5pt}
+        1x Breadboard
+        \item \vspace{-5pt}
+        1x 16x2 LCD
+        \item \vspace{-5pt}
+        1x Photoresistor
+        \item \vspace{-5pt}
+        1x 10K$\Omega$ Potentiometer
+        \item \vspace{-5pt}
+        1x 10K$\Omega$ Resistor
+        \item \vspace{-5pt}
+        1x 220$\Omega$ Resistor
+        \item \vspace{-5pt}
+        Many wires
+    \end{enumerate}
+    \hwline
+\end{homeworkProblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \vspace{-20pt}\subsection{3 Circuit Instructions}
+    \vspace{-5pt}Here is a step by step guide on how to wire the circuit on the next page.
+    \begin{enumerate}
+        \item
+        To get started with wiring, get your Arduino board and breadboard situated next
+        to each other.
+        \item \vspace{-5pt}
+        Connect a Arduino GND pin to the ground rail on your breadboard.
+        \item \vspace{-5pt}
+        Next connect your Arduino 5V power pin to the source rail on your breadboard.
+        \item \vspace{-5pt}
+        On your breadboard, place your photoresistor on two rails, connect one lead to 
+        the source rail. Connect the other lead via the 10K$\Omega$ resistor to the ground rail. On the 
+        grounded lead rail, connect a wire from there to your Arduino's analog in A0 
+        pin. This part sends
+        a resistance value based on the light level.
+        \item \vspace{-5pt}
+        Place your 10K$\Omega$ Potentiometer on 3 rails, wire the outer rails to the 
+        source and ground rails. \\The middle rail will be wired in a later step, this
+        part controls the LCD's contrast.
+        \item \vspace{-5pt}
+        Place your 16x2 LCD on your breadboard and wire the connections like so: \\
+        \begin{tabularx}{0.9\textwidth} { 
+            | >{\centering\arraybackslash}X 
+            | >{\centering\arraybackslash}X 
+            | >{\centering\arraybackslash}X 
+            | >{\centering\arraybackslash}X 
+            | >{\centering\arraybackslash}X | }
+            \hline 16x2 LCD & Wire & Arduino & Potentiometer & Note \\
+            \hline VSS (GND) & Ground & GND & -- & -- \\
+            \hline VDD (VCC) & Source & 5V & -- & -- \\
+            \hline V0 (V0) & Blue & -- & Middle rail & -- \\
+            \hline RS (RS) & Orange & 12 & -- & -- \\
+            \hline RW (RW) & Ground & GND & -- & -- \\
+            \hline E (E) & Yellow & 11 & -- & -- \\
+            \hline D4 (DB4) & Green & 5 & -- & -- \\
+            \hline D5 (DB5) & Turquoise & 4 & -- & -- \\
+            \hline D6 (DB6) & Purple & 3 & -- & -- \\
+            \hline D7 (DB7) & Brown & 2 & -- & -- \\
+            \hline A (LED) & Source & 5V & -- & via 220$\Omega$ \\
+            \hline K (LED) & Ground & GND & -- & -- \\
+            \hline
+        \end{tabularx}
+    \end{enumerate}
+\end{homeworkProblem}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \vspace{-20pt}\subsection{4 Diagram}
+    \img{0.3}{diagram.png}
+
+
+    Viewable Simulation: \href{https://www.tinkercad.com/things/9B8VM8YcSko-lab-4?sharecode=UGIQ\_FVNXX0\_Xf9GDLhld34D26ScDwL40DuRshzMJZo}{Lab-4}
+    \hwline
+\end{homeworkProblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \vspace{-20pt}\subsection{5 Schematic}
+    \img{0.35}{schematic.png}
+    \hwline
+\end{homeworkProblem}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \vspace{-20pt}\subsection{6 Sample Code}
+    \vspace{-5pt}Please install the LiquidCrystal library in your Arduino IDE to run the 
+    following code. The goal of the code is to update the LCD while reading the 
+    photoresistor's analog values.
+    \hwline
+    \begin{minted}{cpp}
+/* rmagd2-Lab-04.ino */
+/* ---------------------------------------------------------------------------------------
+ >> Assignment details and provided code are created and owned by Patrick Troy.
+ >> University of Illinois Chicago - CS 362, Spring 2024
+ >> --------------------------------------------------------------------------------------
+ >> File   : rmagd2-Lab-04.ino :: Lab 4 - Photoresistor (LDR – Light Dependent Resistor)
+ >> Author : Ryan Magdaleno
+ >> UIN/nID: 668523658 (rmagd2)
+ >> System : Windows 10 w/ Mingw-w64
+ >> TA     : David Levit
+ - -                             - -
+ >> References used ::
+ >> https://docs.wokwi.com/parts/wokwi-photoresistor-sensor
+ - -                             - -
+ >> File overview ::
+ >> This program makes use of a 16x2 LCD along with a photoresistor. The photoresistor
+ >> gets the light level and sends its analog output to the arduino to be displayed
+ >> on the 16x2 with predefined light level messages. The 16x2 LCD will also be
+ >> displaying the time in ms since the start of the program.
+--------------------------------------------------------------------------------------- */
+// Preprocessor directives ::
+#include <LiquidCrystal.h>
+
+// Global variables ::
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+byte prevLux, curLux;
+String luxText[] = {
+  "brightly lit    ",
+  "fully lit       ",
+  "medium          ",
+  "partially dark  ",
+  "dark            "
+};
+int ranges[][2] = {
+  {501, 2000},
+  {201, 500},
+  {51, 200},
+  {16, 50},
+  {0, 15}
+};
+
+
+
+
+void setup()
+{
+  // Set up devices ::
+  lcd.begin(16, 2);
+
+  // Set inital values on lcd ::
+  prevLux = getLuxIndex();
+  lcd.print(luxText[prevLux]);
+  lcd.setCursor(0, 1);
+  lcd.print("                ");
+  lcd.print(millis());
+}
+
+
+// Retrieve corresponding text idex ::
+byte getLuxIndex()
+{
+  int lux = analogRead(A0);
+  for (byte i = 0; i < 5; ++i) {
+    if (lux >= ranges[i][0] && lux <= ranges[i][1]) {
+        return i;
+    }
+  }
+  return -1;
+}
+
+
+void loop()
+{
+  curLux = getLuxIndex();
+  if (prevLux != curLux) {
+    lcd.setCursor(0, 0);
+    lcd.print(luxText[curLux]);
+    prevLux = curLux;
+  }
+  lcd.print(millis());
+  lcd.setCursor(0, 1);
+}
+    \end{minted}
+    \hwline
+\end{homeworkProblem}
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \subsection{7 References}
+    \begin{enumerate}
+        \item \vspace{-5pt}
+        \href{https://projecthub.arduino.cc/tropicalbean/how-to-use-a-photoresistor-1143fd}
+        {Photoresistor tutorial}
+        \item \vspace{-5pt}
+        \href{https://docs.arduino.cc/learn/electronics/lcd-displays/}
+        {16x2 LCD tutorial}
+        \item \vspace{-5pt}
+        \href{https://www.arduino.cc/reference/en/libraries/liquidcrystal/}
+        {LiquidCrystal library documentation}
+        \item \vspace{-5pt}
+        \href{https://roboticsbackend.com/arduino-potentiometer-complete-tutorial/}
+        {Potentiometer tutorial}
+    \end{enumerate}
+    \hwline
+\end{homeworkProblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \vspace{-20pt}\subsection{8 Experimenting}
+    \begin{enumerate}
+        \item \vspace{-5pt}
+        I determined the ranges by covering the photoresistor with my hands and read the
+        lux value via the serial monitor, this was my "dark" values, $\approx$
+        0 -- 15 lux.
+        \item \vspace{-5pt}
+        I then used a flashlight and checked documentation that the max lux value is
+        1023, so I used 501 -- 2000 for my "brightly lit" values.
+        \item \vspace{-5pt}
+        Everything in between was done by moving my flashlight away and letting the
+        photoresistor enter darkness, that's how I got my "partially dark", "medium",
+        and "fully lit" ranges.
+    \end{enumerate}
+    \hwline
+\end{homeworkProblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{homeworkProblem}{}
+    \vspace{-20pt}\subsection{9 Conclusion}
+    \vspace{-5pt}This was a fun lab, I learned how to use a photoresistor. My final
+    project for this class might rely on resistors in case a part of my group's final
+    project cannot be achieved. My final project uses solenoids to press keys on a
+    keyboard, currently my groupmate is having trouble with the solenoid circuit. The 
+    solenoid circuit caught on fire recently and we're looking for alternatives if
+    the circuit can't be completed in time for our presentation. I thought of using
+    photoresistors to detect the notes falling and sending the data via serial to a
+    computer side program for virtual key presses. Writing this report in a how to
+    manner also helped me fully understand the materials used in this lab.
+    \hwline
+\end{homeworkProblem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
