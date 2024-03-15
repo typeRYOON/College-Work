@@ -46,6 +46,9 @@
 > [Homework 3 : : Sets, Relations, Graphs.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-3/CS151-HW-3.pdf "CS151-HW-3")  
 > [Homework 4 : : Proof by Induction.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-4/CS151-HW-4.pdf "CS151-HW-4")  
 > [Homework 5 : : Combinatorics.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-5/CS151-HW-5.pdf "CS151-HW-5")  
+> [Exam 1 : : Midterm 1.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Exams/Exam-1/CS151-Exam-1.pdf "CS151-Exam-1")  
+> [Exam 2 : : Midterm 2.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Exams/Exam-2/CS151-Exam-2.pdf "CS151-Exam-2")  
+> [Exam 3 : : Final Exam.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Exams/Exam-3/CS151-Exam-3.pdf "CS151-Exam-3")  
 ---
 > ### CS211 : : Programming Practicum
 > [Project 1 : : Hunt The Wumpus w/ C.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-1 "CS211-Project-1")  
