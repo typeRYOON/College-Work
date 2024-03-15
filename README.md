@@ -41,7 +41,11 @@
 > [Project 5 : : March Madness Predictor w/ C++.](https://github.com/typeRYOON/College-Work/blob/main/CS141/Project-5 "CS141-Project-5")
 ---
 > ### CS151 : : Mathematical Foundations of Computing
-> [Homework 1 : : Propositional Logic.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-1/CS151-HW-1.pdf "CS151-HW-1")
+> [Homework 1 : : Propositional Logic.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-1/CS151-HW-1.pdf "CS151-HW-1")  
+> [Homework 2 : : Constructing Proofs.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-2/CS151-HW-2.pdf "CS151-HW-2")  
+> [Homework 3 : : Sets, Relations, Graphs.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-3/CS151-HW-3.pdf "CS151-HW-3")  
+> [Homework 4 : : Proof by Induction.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-4/CS151-HW-4.pdf "CS151-HW-4")  
+> [Homework 5 : : Combinatorics.](https://github.com/typeRYOON/College-Work/blob/main/CS151/Homework/HW-5/CS151-HW-5.pdf "CS151-HW-5")  
 ---
 > ### CS211 : : Programming Practicum
 > [Project 1 : : Hunt The Wumpus w/ C.](https://github.com/typeRYOON/College-Work/tree/main/CS211/Project-1 "CS211-Project-1")  
