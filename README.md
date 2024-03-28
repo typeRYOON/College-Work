@@ -116,6 +116,7 @@
 > [Lab 5 : : Multiple Inputs and Outputs.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-05 "CS362-Lab-5")  
 > [Lab 6 : : Computer I/O.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-06 "CS362-Lab-6")  
 > [Lab 7 : : Communication Between Arduinos.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-07 "CS362-Lab-7")  
+> [Lab 8 : : Interrupts.](https://github.com/typeRYOON/College-Work/tree/main/CS362/Labs/Lab-08 "CS362-Lab-8")  
 ---
 > ### CS401 : : Computer Algorithms I
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")  
