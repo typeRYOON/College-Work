@@ -123,6 +123,7 @@
 > [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-2/CS401-HW-2.pdf "CS401-HW-2")  
 > [Homework 3 : : Divide and Conquer Algorithm Implementations.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-3/CS401-HW-3.pdf "CS401-HW-3")   
 > [Homework 4 : : Dynamic Programming.](https://github.com/typeRYOON/College-Work/blob/main/CS401/HW-4/CS401-HW-4.pdf "CS401-HW-4")   
+> [Homework E : : Midterm Extra Credit Problem.](CS401/HW-E/CS401-HW-E.pdf "CS401-HW-E")
 ---
 > ### MATH181 : : Calculus II
 > Will add soon :)
