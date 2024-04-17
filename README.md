@@ -107,6 +107,8 @@
 > [Homework 3 : : Karnaugh Maps.](CS362/Homework/HW-3/CS362-HW-3.pdf "CS362-HW-3")   
 > [Homework 4 : : Lab Report for Lab 4.](CS362/Homework/HW-4/CS362-HW-4.pdf "CS362-HW-4")   
 > [Homework 5 : : Mux, Decoder, and Memory.](CS362/Homework/HW-5/CS362-HW-5.pdf "CS362-HW-5")   
+> [Homework 6 : : FSM part 1.](CS362/Homework/HW-6/CS362-HW-6.pdf "CS362-HW-6")  
+> [Homework 7 : : FSM part 2.](CS362/Homework/HW-7/CS362-HW-7.pdf "CS362-HW-7")   
 > [Final Project : : VSRG-UNO-R3 w/ C++ and Arduino.](https://github.com/typeRYOON/VSRG-UNO-R3 "VSRG-UNO-R3")   
 > [Lab 1 : : Three Blinking Lights.](CS362/Labs/Lab-01 "CS362-Lab-1")   
 > [Lab 2 : : Three Bit Counter.](CS362/Labs/Lab-02 "CS362-Lab-2")   
@@ -116,12 +118,14 @@
 > [Lab 6 : : Computer I/O.](CS362/Labs/Lab-06 "CS362-Lab-6")   
 > [Lab 7 : : Communication Between Arduinos.](CS362/Labs/Lab-07 "CS362-Lab-7")   
 > [Lab 8 : : Interrupts.](CS362/Labs/Lab-08 "CS362-Lab-8")   
+> [Lab 9 : : RGB LED.](CS362/Labs/Lab-09 "CS362-Lab-9")  
 ---   
 > ### CS401 : : Computer Algorithms I   
 > [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")   
 > [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](CS401/HW-2/CS401-HW-2.pdf "CS401-HW-2")   
 > [Homework 3 : : Divide and Conquer Algorithm Implementations.](CS401/HW-3/CS401-HW-3.pdf "CS401-HW-3")   
 > [Homework 4 : : Dynamic Programming.](CS401/HW-4/CS401-HW-4.pdf "CS401-HW-4")   
+> [Homework 5 : : Network Flow.](CS401/HW-5/CS401-HW-5.pdf "CS401-HW-5")   
 > [Homework E : : Midterm EC Problem.](CS401/HW-E/CS401-HW-E.pdf "CS401-HW-E")   
 ---   
 > ### MATH181 : : Calculus II   
