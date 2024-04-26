@@ -121,9 +121,9 @@
 > [Lab 9 : : RGB LED.](CS362/Labs/Lab-09 "CS362-Lab-9")  
 ---   
 > ### CS401 : : Computer Algorithms I   
-> [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy Algorithm Implementations.](CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")   
-> [Homework 2 : : Shortest Path Graph Traversal Algorithm Implementations.](CS401/HW-2/CS401-HW-2.pdf "CS401-HW-2")   
-> [Homework 3 : : Divide and Conquer Algorithm Implementations.](CS401/HW-3/CS401-HW-3.pdf "CS401-HW-3")   
+> [Homework 1 : : Asymptotic Dominance, Runtime Analysis, Greedy.](CS401/HW-1/CS401-HW-1.pdf "CS401-HW-1")   
+> [Homework 2 : : Shortest Path Graph Traversal.](CS401/HW-2/CS401-HW-2.pdf "CS401-HW-2")   
+> [Homework 3 : : Divide and Conquer.](CS401/HW-3/CS401-HW-3.pdf "CS401-HW-3")   
 > [Homework 4 : : Dynamic Programming.](CS401/HW-4/CS401-HW-4.pdf "CS401-HW-4")   
 > [Homework 5 : : Network Flow.](CS401/HW-5/CS401-HW-5.pdf "CS401-HW-5")   
 > [Homework E : : Midterm EC Problem.](CS401/HW-E/CS401-HW-E.pdf "CS401-HW-E")   
