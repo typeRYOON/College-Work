@@ -17,7 +17,8 @@
 > [**CS342 : : Software Design**](#cs342---software-design "CS342")   
 > [**CS361 : : Systems Programming**](#cs361---systems-programming "CS361")   
 > [**CS362 : : Computer Design**](#cs362---computer-design "CS362")   
-> [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")   
+> [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")
+> [**CS415 : : Computer Vision I**](#cs401---computer-vision-i "CS415")   
 > [**MATH181 : : Calculus II**](#math181---calculus-ii "MATH181")   
 > [**MATH210 : : Calculus III**](#math210---calculus-iii "MATH210")   
 > [**MATH310 : : Applied Linear Algebra**](#math310---applied-linear-algebra "MATH310")   
@@ -127,6 +128,9 @@
 > [Homework 4 : : Dynamic Programming.](CS401/HW-4/CS401-HW-4.pdf "CS401-HW-4")   
 > [Homework 5 : : Network Flow.](CS401/HW-5/CS401-HW-5.pdf "CS401-HW-5")   
 > [Homework E : : Midterm EC Problem.](CS401/HW-E/CS401-HW-E.pdf "CS401-HW-E")   
+---   
+> ### CS415 : : Computer Vision I   
+> Not taken yet.   
 ---   
 > ### MATH181 : : Calculus II   
 > Will add soon :)   
