@@ -18,7 +18,7 @@
 > [**CS361 : : Systems Programming**](#cs361---systems-programming "CS361")   
 > [**CS362 : : Computer Design**](#cs362---computer-design "CS362")   
 > [**CS401 : : Computer Algorithms I**](#cs401---computer-algorithms-i "CS401")   
-> [**CS415 : : Computer Vision I**](#cs401---computer-vision-i "CS415")   
+> [**CS415 : : Computer Vision I**](#cs415---computer-vision-i "CS415")   
 > [**MATH181 : : Calculus II**](#math181---calculus-ii "MATH181")   
 > [**MATH210 : : Calculus III**](#math210---calculus-iii "MATH210")   
 > [**MATH310 : : Applied Linear Algebra**](#math310---applied-linear-algebra "MATH310")   
