@@ -17,7 +17,7 @@
  >> used by cv2's filter2D function.
  - -                             - -
  >> Usage:
- >> ret = convolution("lena.png", 3, ["cv2", "mean", "median"])
+ >> ret = convolution("lena.png", 7, ["cv2", "mean", "median"])
  >> cv2 must be in the 0th index if you want to use that, you can use other filters
  >> in combination after index 0.
  >> Meaning: Apply 7x7 mean and median filters onto "lena.png" using cv2.filter2D.
